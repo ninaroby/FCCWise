@@ -6,7 +6,7 @@
     "Nina Roby"
   ],
   "description": "the Fresno City College Tutorial Center website",
-  "license": "MIT",
+  "license": "",
   "ignore": [
     "**/.*",
     "node_modules",

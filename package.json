@@ -1,0 +1,25 @@
+{
+  "name": "fccwise",
+  "version": "0.0.1",
+  "description": "Redesign work for FCCWise website",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ninaroby/FCCWise.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ninaroby/FCCWise/issues"
+  },
+  "homepage": "https://github.com/ninaroby/FCCWise#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.11.0",
+    "gulp-webserver": "^0.9.1",
+    "jshint-stylish": "^2.0.0"
+  }
+}
