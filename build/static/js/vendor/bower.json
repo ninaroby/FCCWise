@@ -1,0 +1,20 @@
+{
+  "name": "fccwise",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ninaroby/FCCWise",
+  "authors": [
+    "Nina Roby"
+  ],
+  "description": "the Fresno City College Tutorial Center website",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "hbs": "~0.11.2"
+  }
+}

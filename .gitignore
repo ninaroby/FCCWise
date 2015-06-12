@@ -1,6 +1,6 @@
 *.ai
-bin/ 
-vendor/ 
-node_modules/ 
+bin/
+*/vendor/
+node_modules/
 bower_components/
 .sassc
