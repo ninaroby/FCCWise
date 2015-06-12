@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>FCCWise</title>
-</head>
-<body>
-    <h1>Content will be here soon</h1>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
+        <meta name='theme-color' content=''>
+        <title>FCCWise</title>
+        <link rel="stylesheet" href="static/css/style.css">
+    </head>
+    <body>
+
+        <!-- begin Marionette template -->
+
+        <header id="headerRegion"></header>
+        <main id="mainRegion"></main>
+        <footer id="footerRegion"></footer>
+
+        <!-- end Marionette template -->
+
+
+
+        <!-- initialize require -->
+        <script src="static/js/vendor/node_modules/requirejs/require.js"></script>
+
+        <!-- get the Marionette application -->
+        <script>
+            require(['static/js/common'], function (common) {
+                require(['main'])
+            })
+        </script>
+    </body>
 </html>
