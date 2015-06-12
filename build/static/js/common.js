@@ -2,7 +2,7 @@ require.config({
     baseUrl: 'static/js',
 
     paths: {
-        'marionette': 'vendor/node_modules/backbone.marionette/lib/backbone.marionette'
+        'marionette': 'vendor/node_modules/backbone.marionette/lib/backbone.marionette.min'
     },
 
     packages: [
@@ -11,14 +11,14 @@ require.config({
             name: 'app'
         },
         {
-            location: 'vendor/node_modules/jquery/dist',
+            location: 'vendor/node_modules/jquery/dist/',
             name: 'jquery',
-            main: 'jquery'
+            main: 'jquery.min'
         },
         {
             location: 'vendor/node_modules/backbone',
             name: 'backbone',
-            main: 'backbone'
+            main: 'backbone-min'
         },
         {
             location: 'vendor/bower_components/hbs/hbs',
@@ -29,8 +29,8 @@ require.config({
 
     map: {
         '*': {
-            'underscore': 'vendor/bower_components/lodash/lodash',
-            'handlebars': 'vendor/bower_components/handlebars/handlebars'
+            'underscore': 'vendor/bower_components/lodash/lodash.min',
+            'handlebars': 'vendor/bower_components/handlebars/handlebars.min'
         }
     },
 
