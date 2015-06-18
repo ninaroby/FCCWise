@@ -5,6 +5,10 @@ $deep-red: #a80000
 $red: #cc0000
 $black: #000000
 
+*
+    box-sizing: border-box
+    font-family: Futura, Trebuchet MS, Arial, sans-serif
+
 body, main, figure, ul
     margin: 0
 
@@ -12,12 +16,17 @@ body
     overflow-x: hidden
     width: 100vw
 
+ul
+    list-style: none
+li
+    padding: 15px 0
+
 // everything in the header
 
 header
     overflow-x: hidden
     padding: 8px 24px
-    background: #D0103A
+    background: $pantone
     & section
         display: flex
         display: -webkit-flex
@@ -32,18 +41,22 @@ header
         z-index: 999
 
 #slide-out-menu
+    font-size: 18px
     position: fixed
     width: 300px
+    right: 0
     background: #fff
     height: 100vh
     box-shadow: 0 0 8px rgba(0,0,0,0.7)
     z-index: 0
+    color: #a6a6a6
 nav section
     display: flex
     display: -webkit-flex
     align-items: flex-end
     -webkit-align-items: flex-end
     height: 200px
+    background: $lonestar
 
 @media screen and (min-width: 768px)
     .hamburger
@@ -54,4 +67,3 @@ nav section
     .hamburger
         &:last-of-type
             visibility: hidden
-    #headerRegion aside

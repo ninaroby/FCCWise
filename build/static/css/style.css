@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+  font-family: Futura, Trebuchet MS, Arial, sans-serif; }
+
 body, main, figure, ul {
   margin: 0; }
 
@@ -5,10 +9,16 @@ body {
   overflow-x: hidden;
   width: 100vw; }
 
+ul {
+  list-style: none; }
+
+li {
+  padding: 15px 0; }
+
 header {
   overflow-x: hidden;
   padding: 8px 24px;
-  background: #D0103A; }
+  background: #d0103a; }
   header section {
     display: flex;
     display: -webkit-flex;
@@ -23,19 +33,23 @@ header {
     z-index: 999; }
 
 #slide-out-menu {
+  font-size: 18px;
   position: fixed;
   width: 300px;
+  right: 0;
   background: #fff;
   height: 100vh;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
-  z-index: 0; }
+  z-index: 0;
+  color: #a6a6a6; }
 
 nav section {
   display: flex;
   display: -webkit-flex;
   align-items: flex-end;
   -webkit-align-items: flex-end;
-  height: 200px; }
+  height: 200px;
+  background: #6e0200; }
 
 @media screen and (min-width: 768px) {
   .hamburger:first-of-type {
