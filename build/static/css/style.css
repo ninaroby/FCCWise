@@ -39,7 +39,8 @@ header {
   background: #fff;
   height: 100vh;
   z-index: 0;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7); }
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+  overflow: scroll; }
   #slide-out-menu li {
     padding: 25px 0;
     color: #a6a6a6; }
