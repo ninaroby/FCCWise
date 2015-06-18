@@ -2,8 +2,9 @@
   box-sizing: border-box;
   font-family: Futura, Trebuchet MS, Arial, sans-serif; }
 
-body, main, figure, ul {
-  margin: 0; }
+body, main, figure, ul, li {
+  margin: 0;
+  padding: 0; }
 
 body {
   overflow-x: hidden;
@@ -43,7 +44,8 @@ header {
   overflow: scroll; }
   #slide-out-menu li {
     padding: 25px 0;
-    color: #a6a6a6; }
+    color: #a6a6a6;
+    text-indent: 42px; }
 
 nav section {
   display: flex;
