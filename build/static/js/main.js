@@ -12,7 +12,5 @@ define(function (require, exports, module) {
 
     $(document).ready(function() {
         app.start()
-
-        // animate the hamburger menu
     })
 })

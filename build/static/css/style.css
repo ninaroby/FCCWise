@@ -39,10 +39,10 @@ header {
   background: #fff;
   height: 100vh;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
-  z-index: 0;
-  color: #a6a6a6; }
+  z-index: 0; }
   #slide-out-menu li {
-    padding: 25px 0; }
+    padding: 25px 0;
+    color: #a6a6a6; }
 
 nav section {
   display: flex;
@@ -50,7 +50,10 @@ nav section {
   align-items: flex-end;
   -webkit-align-items: flex-end;
   height: 225px;
-  background: #6e0200; }
+  background: #d0103a;
+  color: #fff;
+  text-indent: 36px;
+  font-size: 24px; }
 
 @media screen and (min-width: 768px) {
   .hamburger:first-of-type {
