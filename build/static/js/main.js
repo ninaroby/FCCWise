@@ -12,5 +12,18 @@ define(function (require, exports, module) {
 
     $(document).ready(function() {
         app.start()
+
+        $('.hamburger').click(function() {
+            $('#slide-out-menu').toggleClass('active')
+            if ($('#slide-out-menu').hasClass('active')) {
+                $('#slide-out-menu').animate({
+                    left: 0
+                }, 250)
+            } else {
+                $('#slide-out-menu').animate({
+                    left: '-370px'
+                }, 250)
+            }
+        })
     })
 })

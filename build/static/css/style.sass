@@ -54,11 +54,12 @@ header
     font-size: 18px
     position: fixed
     width: 350px
-    right: 0
+    left: -370px
     background: #fff
     height: 100vh
-    box-shadow: 0 0 8px rgba(0,0,0,0.7)
     z-index: 0
+    box-shadow: 0 0 8px rgba(0,0,0,0.7)
+    overflow: scroll
     & li
         padding: 25px 0
         color: #a6a6a6
@@ -73,12 +74,3 @@ nav section
     text-indent: 36px
     font-size: 24px
 
-@media screen and (min-width: 768px)
-    .hamburger
-        &:first-of-type
-            visibility: hidden
-
-@media screen and (max-width: 768px)
-    .hamburger
-        &:last-of-type
-            visibility: hidden
