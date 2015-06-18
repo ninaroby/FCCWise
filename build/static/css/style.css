@@ -1,2 +1,41 @@
 body, main, figure, ul {
   margin: 0; }
+
+body {
+  overflow-x: hidden;
+  width: 100vw; }
+
+#headerRegion {
+  overflow-x: hidden;
+  padding: 8px 24px;
+  background: #D0103A; }
+  #headerRegion section {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between; }
+  #headerRegion .hamburger {
+    font-size: 36px;
+    color: #fff;
+    cursor: pointer; }
+  #headerRegion aside {
+    position: fixed;
+    right: -300px;
+    width: 300px;
+    background: #fff;
+    height: 100vh;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7); }
+
+@media screen and (min-width: 768px) {
+  .hamburger:first-of-type {
+    visibility: hidden; } }
+@media screen and (max-width: 768px) {
+  .hamburger:last-of-type {
+    visibility: hidden; }
+
+  #headerRegion aside {
+    left: -300px; } }
+
+/*# sourceMappingURL=style.css.map */

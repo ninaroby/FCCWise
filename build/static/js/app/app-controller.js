@@ -9,10 +9,10 @@ define(function (require, exports, module) {
     var AppController = Marionette.Controller.extend({
         initialize: function() {
             this.app = app
-
-            // templates for app.{{region}}.show(new {{region}})
         },
-        index: function() {}
+        index: function() {
+            // templates for app.{{region}}.show(new {{region}})
+        }
     })
 
     exports.AppController = AppController

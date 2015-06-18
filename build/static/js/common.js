@@ -1,10 +1,9 @@
 require.config({
-    baseUrl: 'static/js',
+    baseUrl: 'static/js/',
 
     paths: {
         'marionette': 'vendor/node_modules/backbone.marionette/lib/backbone.marionette.min'
     },
-
     packages: [
         {
             location: 'app',
@@ -21,25 +20,22 @@ require.config({
             main: 'backbone-min'
         },
         {
-            location: 'vendor/bower_components/hbs/hbs',
+            location: 'vendor/hbs',
             name: 'hbs',
             main: 'hbs'
         }
     ],
-
     map: {
         '*': {
             'underscore': 'vendor/bower_components/lodash/lodash.min',
             'handlebars': 'vendor/bower_components/handlebars/handlebars.min'
         }
     },
-
     hbs: {
         templateExtension: 'html',
         disableI18n: true,
         helperDirectory: 'app/shared/hbs'
     },
-
     shim: {
         'backbone': {
             'deps': ['jquery', 'underscore'],
@@ -50,6 +46,5 @@ require.config({
             'exports': 'Marionette'
         }
     },
-
     wrapShim: true,
 })
