@@ -11,7 +11,7 @@ define(function (require, exports, module) {
             this.app = app
         },
         index: function() {
-            // templates for app.{{region}}.show(new {{region}})
+            // templates for app.{{region}}.show(new {{region}}())
         }
     })
 

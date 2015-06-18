@@ -5,37 +5,43 @@ body {
   overflow-x: hidden;
   width: 100vw; }
 
-#headerRegion {
+header {
   overflow-x: hidden;
   padding: 8px 24px;
   background: #D0103A; }
-  #headerRegion section {
+  header section {
     display: flex;
     display: -webkit-flex;
     align-items: center;
     -webkit-align-items: center;
     justify-content: space-between;
     -webkit-justify-content: space-between; }
-  #headerRegion .hamburger {
+  header .hamburger {
     font-size: 36px;
     color: #fff;
-    cursor: pointer; }
-  #headerRegion aside {
-    position: fixed;
-    right: -300px;
-    width: 300px;
-    background: #fff;
-    height: 100vh;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7); }
+    cursor: pointer;
+    z-index: 999; }
+
+#slide-out-menu {
+  position: fixed;
+  width: 300px;
+  background: #fff;
+  height: 100vh;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+  z-index: 0; }
+
+nav section {
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  height: 200px; }
 
 @media screen and (min-width: 768px) {
   .hamburger:first-of-type {
     visibility: hidden; } }
 @media screen and (max-width: 768px) {
   .hamburger:last-of-type {
-    visibility: hidden; }
-
-  #headerRegion aside {
-    left: -300px; } }
+    visibility: hidden; } }
 
 /*# sourceMappingURL=style.css.map */

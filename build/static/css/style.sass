@@ -1,3 +1,10 @@
+$pantone: #d0103a
+$pantone-black: #1e1e1e
+$lonestar: #6e0200
+$deep-red: #a80000
+$red: #cc0000
+$black: #000000
+
 body, main, figure, ul
     margin: 0
 
@@ -5,9 +12,9 @@ body
     overflow-x: hidden
     width: 100vw
 
-// everything in the #headerRegion
+// everything in the header
 
-#headerRegion
+header
     overflow-x: hidden
     padding: 8px 24px
     background: #D0103A
@@ -22,13 +29,21 @@ body
         font-size: 36px
         color: #fff
         cursor: pointer
-    & aside
-        position: fixed
-        right: -300px
-        width: 300px
-        background: #fff
-        height: 100vh
-        box-shadow: 0 0 8px rgba(0,0,0,0.7)
+        z-index: 999
+
+#slide-out-menu
+    position: fixed
+    width: 300px
+    background: #fff
+    height: 100vh
+    box-shadow: 0 0 8px rgba(0,0,0,0.7)
+    z-index: 0
+nav section
+    display: flex
+    display: -webkit-flex
+    align-items: flex-end
+    -webkit-align-items: flex-end
+    height: 200px
 
 @media screen and (min-width: 768px)
     .hamburger
@@ -40,4 +55,3 @@ body
         &:last-of-type
             visibility: hidden
     #headerRegion aside
-        left: -300px
