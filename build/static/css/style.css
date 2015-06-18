@@ -17,6 +17,8 @@ header {
   padding: 8px 24px;
   background: #d0103a; }
   header section {
+    background: url(http://fccwise.fresnocitycollege.edu/fccwise2/images/logo_fccwise.jpg) center center no-repeat;
+    background-size: contain;
     display: flex;
     display: -webkit-flex;
     align-items: center;

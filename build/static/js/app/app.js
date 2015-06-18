@@ -9,9 +9,7 @@ define(function (require, exports, module) {
     var app = new FCCWise()
 
     app.addRegions({
-        headerRegion: '#headerRegion',
-        mainRegion: '#mainRegion',
-        footerRegion: '#footerRegion'
+        mainRegion: '#mainRegion'
     })
 
     app.addInitializer(function() {
