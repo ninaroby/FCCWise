@@ -1,6 +1,78 @@
+.short {
+  padding: 8px 24px; }
+
+header {
+  width: 100vw;
+  overflow-x: hidden;
+  background: #d0103a;
+  z-index: 1; }
+  header section {
+    position: fixed;
+    padding: 24px 24px;
+    background: url(../images/fcc_wise_logo.svg) center center no-repeat;
+    background-size: contain;
+    position: relative;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: center;
+    -webkit-align-items: center;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    transition: 0.2s ease;
+    -webkit-transition: 0.2s ease; }
+  header .hamburger {
+    font-size: 36px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 9999; }
+
+#slide-out-menu {
+  font-size: 18px;
+  position: fixed;
+  width: 350px;
+  left: -370px;
+  background: #fff;
+  height: 100vh;
+  z-index: 0;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+  overflow: scroll;
+  z-index: 999; }
+  #slide-out-menu li {
+    padding: 25px 0;
+    color: #a6a6a6;
+    text-indent: 42px; }
+  #slide-out-menu li > ul {
+    transition: 0.2s ease;
+    -webkit-transition: 0.2s ease;
+    padding: 25px 0 0 0;
+    display: none;
+    height: 0;
+    background: #cacaca;
+    padding-left: 12px; }
+  #slide-out-menu li:hover ul {
+    display: block;
+    height: auto; }
+
+nav section {
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  height: 225px;
+  background: #d0103a;
+  color: #fff;
+  text-indent: 36px;
+  font-size: 24px; }
+
+#mainRegion {
+  padding-top: 125px; }
+
 * {
   box-sizing: border-box;
-  font-family: "Helvetica Neu", Helvetica, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 100%; }
 
 body, main, figure, ul, li {
   margin: 0;
@@ -13,49 +85,8 @@ body {
 ul {
   list-style: none; }
 
-header {
-  overflow-x: hidden;
-  padding: 8px 24px;
-  background: #d0103a; }
-  header section {
-    background: url(../images/fcc_wise_logo.svg) center center no-repeat;
-    background-size: contain;
-    display: flex;
-    display: -webkit-flex;
-    align-items: center;
-    -webkit-align-items: center;
-    justify-content: space-between;
-    -webkit-justify-content: space-between; }
-  header .hamburger {
-    font-size: 36px;
-    color: #fff;
-    cursor: pointer;
-    z-index: 999; }
-
-#slide-out-menu {
-  font-size: 18px;
-  position: fixed;
-  width: 350px;
-  left: -370px;
-  background: #fff;
-  height: 100vh;
-  z-index: 0;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
-  overflow: scroll; }
-  #slide-out-menu li {
-    padding: 25px 0;
-    color: #a6a6a6;
-    text-indent: 42px; }
-
-nav section {
-  display: flex;
-  display: -webkit-flex;
-  align-items: flex-end;
-  -webkit-align-items: flex-end;
-  height: 225px;
-  background: #d0103a;
-  color: #fff;
-  text-indent: 36px;
-  font-size: 24px; }
+a {
+  text-decoration: none;
+  color: inherit; }
 
 /*# sourceMappingURL=style.css.map */

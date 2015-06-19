@@ -25,5 +25,11 @@ define(function (require, exports, module) {
                 }, 250)
             }
         })
+
+        var header = document.querySelector('header > section')
+        window.addEventListener('scroll', function(e) {
+            if (this.scrollY > 100) { header.className = 'short'; }
+            else header.className = ''
+        })
     })
 })

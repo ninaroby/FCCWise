@@ -1,19 +1,7 @@
-$fcc-red: #d0103a
-$fcc-black: #1e1e1e
-$lonestar: #6e0200
-$deep-red: #a80000
-$red: #cc0000
-$black: #000000
-
-// can we name colors as related to the main areas in the design? like this:
-// I am still figuring out some of the colors, but I'll update when I am done
-
-$tc-red: #6e0200
-$etc-purple: #990E67
-$wrc-red: #d0103a
-$pass-yellow: #eaaf05
-$ws-orange: #dd3706
-
+@import colorpalette
+@import flex
+@import header
+@import main
 
 *
     box-sizing: border-box
@@ -30,50 +18,6 @@ body
 
 ul
     list-style: none
-
-// everything in the header
-
-header
-    overflow-x: hidden
-    padding: 8px 24px
-    background: $fcc-red
-    & section
-        background: url(../images/fcc_wise_logo.svg) center center no-repeat
-        background-size: contain
-        display: flex
-        display: -webkit-flex
-        align-items: center
-        -webkit-align-items: center
-        justify-content: space-between
-        -webkit-justify-content: space-between
-    & .hamburger
-        font-size: 36px
-        color: #fff
-        cursor: pointer
-        z-index: 999
-
-#slide-out-menu
-    font-size: 18px
-    position: fixed
-    width: 350px
-    left: -370px
-    background: #fff
-    height: 100vh
-    z-index: 0
-    box-shadow: 0 0 8px rgba(0,0,0,0.7)
-    overflow: scroll
-    & li
-        padding: 25px 0
-        color: #a6a6a6
-        text-indent: 42px
-nav section
-    display: flex
-    display: -webkit-flex
-    align-items: flex-end
-    -webkit-align-items: flex-end
-    height: 225px
-    background: $fcc-red
-    color: #fff
-    text-indent: 36px
-    font-size: 24px
-
+a
+    text-decoration: none
+    color: inherit
