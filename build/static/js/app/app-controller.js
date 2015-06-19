@@ -5,18 +5,28 @@ define(function (require, exports, module) {
     var $ = require('jquery')
 
     // template requires here
-    var TC = require('app/item-views/tc').TC
+
+    // collection requires here
+    var Docs = require('app/collections/Docs').Docs
+
+    // collection view requires here
+    var DocsView = require('app/collection-views/DocsView').DocsView
 
     var AppController = Marionette.Controller.extend({
-        initialize: function() {
+        initialize: function(options) {
             this.app = app
+            this.app.collection = new Docs()
+            this.app.collection.fetch()
         },
         // events: {
         //     'click ': ''
         // },
         index: function() {
             // templates for app.{{region}}.show(new {{region}}())
-            this.app.mainRegion.show(new TC())
+            this.app.mainRegion.show(new DocsView({
+                collection: this.app.collection
+            }))
+            // console.log(this.app.collection.models)
         }
     })
 

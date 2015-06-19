@@ -2,8 +2,8 @@ define(function(require, exports, module) {
     var Marionette = require('marionette')
     var template = require('hbs!../templates/docs')
 
-    var Docs = Marionette.ItemView.extend({
-        tagName: 'article',
+    var DocView = Marionette.ItemView.extend({
+        tagName: 'li',
         className: 'docs',
         template: template,
         initialize: function() {
@@ -11,5 +11,5 @@ define(function(require, exports, module) {
         }
     })
 
-    exports.Docs = Docs
+    exports.DocView = DocView
 })
