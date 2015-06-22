@@ -1,0 +1,35 @@
+main {
+    width: 100%;
+    height: auto;
+    background: whitesmoke;
+    margin: auto;
+}
+
+.area {
+    width: 100%;
+    background:#d0103a;
+    margin: 1em;
+    padding: .5em;
+    color: white;
+    text-align: right;
+    font-size: 1.2em;
+    letter-spacing: .1em;
+    border-radius: 5px 0 0 5px;
+}
+
+.area p {
+  margin-right: 1em;
+}
+
+.docs {
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 1em;
+}
