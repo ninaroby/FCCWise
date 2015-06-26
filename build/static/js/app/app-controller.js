@@ -18,15 +18,11 @@ define(function (require, exports, module) {
             this.app.collection = new Docs()
             this.app.collection.fetch()
         },
-        // events: {
-        //     'click ': ''
-        // },
         index: function() {
             // templates for app.{{region}}.show(new {{region}}())
-            this.app.mainRegion.show(new DocsView({
-                collection: this.app.collection
-            }))
-            // console.log(this.app.collection.models)
+            // this.app.mainRegion.show(new DocsView({
+            //     collection: this.app.collection
+            // }))
         }
     })
 

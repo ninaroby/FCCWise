@@ -1,4 +1,3 @@
-
 // everything in the header
 .short
     padding: 8px 24px
@@ -32,18 +31,17 @@ header
     box-shadow: 0 0 8px rgba(0,0,0,0.7)
     overflow: scroll
     z-index: 999
-    & li
+    & li > a
+        display: block
         padding: 25px 0
         color: #a6a6a6
         text-indent: 42px
     & li > ul
         transition: 0.2s ease
         -webkit-transition: 0.2s ease
-        padding: 25px 0 0 0
         display: none
         height: 0
         background: #cacaca
-        padding-left: 12px
     & li:hover ul
         display: block
         height: auto
