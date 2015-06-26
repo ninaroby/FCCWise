@@ -75,17 +75,18 @@ nav section {
   #grid-container #grid {
     display: flex;
     display: -webkit-flex;
-    max-width: 900px;
+    max-width: 46vw;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     justify-content: space-between;
     -webkit-justify-content: space-between;
     align-content: space-between;
     -webkit-align-content: space-between;
-    min-height: 51vw; }
+    min-height: 50vw; }
     #grid-container #grid img {
-      margin: 5px;
-      height: 260px; }
+      flex-basis: 30%;
+      -webkit-flex-basis: 30%;
+      height: 14vw; }
 
 * {
   box-sizing: border-box;
