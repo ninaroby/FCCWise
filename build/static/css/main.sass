@@ -42,3 +42,14 @@
         height: 14vw
 .gray
     background: #eee
+
+@media screen and (max-width: 640px)
+    .grid-container
+        padding: 1%
+        & section:not(.articles)
+            padding: 0
+
+    .grid, .articles
+        max-width: 100%
+        & img
+            height: 25vw
