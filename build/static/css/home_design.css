@@ -1,0 +1,60 @@
+#mainRegion {
+    width: 100%;
+
+}
+
+#area-nav ul {
+    display:flex;
+    justify-content:flex-end;
+    height: 60px;
+    background-color: #whitesmoke;
+    align-items:center;
+}
+
+#hero {
+    height: 350px;
+    background: url(../images/hero_pass.png);
+}
+
+#area-nav li {
+    margin: 1em;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+#main {
+    display: flex;
+}
+
+#primary-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+#primary-content section {
+    flex-grow: 3;
+    padding: 1em;
+    margin-right: 2em;
+
+}
+
+#primary-content aside {
+    flex-grow: 1;
+    min-width: 400px;
+    text-align: center;
+    background-color: #D0D0D0;
+    padding: 1em;
+}
+
+#primary-content p {
+    margin: 1em 0;
+    line-height: 1.5em;
+}
+
+#primary-content h2 {
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+
+

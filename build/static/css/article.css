@@ -68,6 +68,37 @@ section {
 }
 
 /*-------------------------
+List intensive documents
+---------------------------*/
+ul {
+    line-height: 1.5em;
+    list-style-type: circle;
+    padding-left: 1em;
+}
+
+li {
+    margin-bottom: .5em;
+}
+
+li:last-child {
+    margin-bottom: 1em;
+}
+
+i {
+    font-style: italic;
+}
+
+li li {
+    margin-top: .5em;
+    list-style-type: none;
+}
+
+.example {
+    background-color: #CDCDCD;
+    padding:1em;
+}
+
+/*-------------------------
 Media Queries for tablet
 --------------------------*/
 
@@ -105,3 +136,5 @@ Media Qureies for Mobile
         font-size: 1.2em;
     }
 }
+
+
