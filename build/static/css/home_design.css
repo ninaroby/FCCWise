@@ -12,14 +12,45 @@
 }
 
 #hero {
+    width: 100%;
     height: 350px;
     background: url(../images/hero_pass.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
+
+#hero img {
+    width:200px;
+    height:193px;
+    flex-basis: auto;
+}
+
+#hero h1 {
+        color: white;
+        padding:0;
+        margin-bottom: 1em;
+        font-size: 3em;
+}
+
+#hero p {
+    margin-bottom: 1em;
+    font-size: 2em;
+
+
+}
+
+
 
 #area-nav li {
     margin: 1em;
     text-transform: uppercase;
     font-size: .8em;
+}
+
+#area-nav li:last-child {
+    padding-right: 1em;
 }
 
 #main {
