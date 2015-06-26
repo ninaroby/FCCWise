@@ -6,6 +6,9 @@ define(function (require, exports, module) {
 
     // template requires here
 
+    // item view requires here
+    var HomeView = require('app/item-views/home-view').HomeView
+
     // collection requires here
     var Docs = require('app/collections/Docs').Docs
 
@@ -20,9 +23,7 @@ define(function (require, exports, module) {
         },
         index: function() {
             // templates for app.{{region}}.show(new {{region}}())
-            // this.app.mainRegion.show(new DocsView({
-            //     collection: this.app.collection
-            // }))
+            this.app.mainRegion.show(new HomeView())
         }
     })
 
