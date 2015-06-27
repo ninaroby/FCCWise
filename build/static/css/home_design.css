@@ -37,12 +37,11 @@
 #hero p {
     margin-bottom: 1em;
     font-size: 2em;
-
-
 }
 
-
-
+/*------------------------------
+Area nav styles
+-------------------------------*/
 #area-nav li {
     margin: 1em;
     text-transform: uppercase;
@@ -51,6 +50,14 @@
 
 #area-nav li:last-child {
     padding-right: 1em;
+}
+
+#area-nav a {
+    color: #1E1E1E;
+}
+
+#area-nav a:hover {
+    color: #EAAF05;
 }
 
 #main {
@@ -87,5 +94,26 @@
     line-height: 1.5em;
 }
 
+/*-------------------------
+Media Queries for tablet
+--------------------------*/
+@media screen and(max-width: 950px) {
+    #primary-content {
+        -webkit-flex-direction: column;
+        -ms-flex-direction:column;
+        flex-direction: column;
+    }
+
+    #primary-content section {
+        width: 100%;
+        flex-grow:0;
+        width: 100%;
+    }
+
+    #primary-content aside {
+        flex-grow:0;
+        width: 100%;
+    }
+}
 
 
