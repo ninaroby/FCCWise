@@ -1,6 +1,5 @@
 #mainRegion {
     width: 100%;
-
 }
 
 #area-nav ul {
@@ -40,7 +39,7 @@
 }
 
 /*------------------------------
-Area nav styles
+Area Nav Styles
 -------------------------------*/
 #area-nav li {
     margin: 1em;
@@ -60,6 +59,14 @@ Area nav styles
     color: #EAAF05;
 }
 
+#area-nav a.current {
+    color: #EAAF05;
+}
+
+/*------------------------------
+Main Content Styles
+-------------------------------*/
+
 #main {
     display: flex;
 }
@@ -72,7 +79,7 @@ Area nav styles
 #primary-content section {
     flex-grow: 3;
     padding: 1em;
-    margin-right: 2em;
+    margin: 0 2em 0 1em;
 
 }
 
@@ -94,10 +101,42 @@ Area nav styles
     line-height: 1.5em;
 }
 
+.pass-btn {
+    color: 1E1E1E;
+    font-style: bold;
+    background-color: #EAAF05;
+    padding: 1.5em;
+    margin: 2em;
+    border-radius: 5px;
+    transition: all 500ms ease-in-out;
+}
+
+.pass-btn:hover {
+    padding: 2em;
+    color:#262626;
+    
+}
+
+.space-after {
+    padding-bottom: 2em;
+}
+
+.inline-link {
+    background-color: #D0D0D0;
+    padding:.75em;
+    color: black;
+    border-radius: 5px;
+    transition: all 500mx ease-in-out;
+}
+
+.inline-link:hover {
+    background-color: #BABABA;
+}
+
 /*-------------------------
 Media Queries for tablet
 --------------------------*/
-@media screen and(max-width: 950px) {
+@media (max-width: 900px) {
     #primary-content {
         -webkit-flex-direction: column;
         -ms-flex-direction:column;
@@ -114,6 +153,31 @@ Media Queries for tablet
         flex-grow:0;
         width: 100%;
     }
+
+    #hero {
+        height: 200px;
+    }
 }
 
+/*-------------------------
+Media Queries for mobile
+--------------------------*/
+@media (max-width: 550px) {
+    #area-nav ul {
+    -webkit-flex-direction: column;
+    -ms-flex-direction:column;
+    flex-direction: column;
+    height: auto;
+    }
+
+    #area-nav ul li {
+      width: 100%;
+      padding: 1em;
+      background-color: #EAEAEA; 
+      text-align: center;
+      margin: 0;
+      border: 1px solid #E8A600; 
+    }
+
+}
 
