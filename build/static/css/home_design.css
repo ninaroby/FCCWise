@@ -149,6 +149,10 @@ Media Queries for tablet
         width: 100%;
     }
 
+    #primary-content p {
+        margin-right: 1em;
+    }
+
     #primary-content aside {
         flex-grow:0;
         width: 100%;
