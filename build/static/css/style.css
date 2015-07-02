@@ -87,65 +87,30 @@ footer {
     align-items: flex-start;
     -webkit-align-items: flex-start; }
 
-.grid-container, .extras {
-  width: 100%;
-  display: flex;
-  display: -webkit-flex;
-  align-items: center;
-  -webkit-align-items: center;
-  flex-direction: column;
-  -webkit-flex-direction: column;
-  padding: 25px; }
-  .grid-container section:not(.articles), .extras section:not(.articles) {
-    flex-basis: 60%;
-    -webkit-flex-basis: 60%;
-    padding: 25px; }
-    .grid-container section:not(.articles) video, .extras section:not(.articles) video {
-      background: #000;
-      width: 100%; }
-  .grid-container aside, .extras aside {
-    flex-basis: 40%;
-    -webkit-flex-basis: 40%;
-    padding: 25px;
-    align-self: flex-start;
-    -webkit-align-self: flex-start; }
-
-.extras {
-  flex-direction: row;
-  -webkit-flex-direction: row; }
-
-.grid {
-  min-height: 50vw; }
-
-.grid, .articles {
-  display: flex;
-  display: -webkit-flex;
-  max-width: 50vw;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  justify-content: space-between;
-  -webkit-justify-content: space-between;
-  align-content: space-between;
-  -webkit-align-content: space-between; }
-  .grid img, .grid article, .articles img, .articles article {
-    flex-basis: 30%;
-    -webkit-flex-basis: 30%; }
-  .grid img, .articles img {
-    height: 14vw; }
-
-.gray {
-  background: #eee; }
-
 @media screen and (max-width: 640px) {
-  .grid-container {
-    padding: 1%; }
-    .grid-container section:not(.articles) {
-      padding: 0; }
+  .grid-container, .extras, .grid {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap; }
 
-  .grid, .articles {
-    max-width: 100%; }
-    .grid img, .articles img {
-      height: 25vw; } }
+  .grid-container, .extras {
+    overflow-x: hidden; }
+    .grid-container .grid, .extras .grid {
+      flex-direction: row;
+      -webkit-flex-direction: row; }
+      .grid-container .grid a, .extras .grid a {
+        flex-basis: 26%;
+        -webkit-flex-basis: 26%;
+        margin: 15px; }
+        .grid-container .grid a img, .extras .grid a img {
+          height: 100%;
+          width: 100%; } }
 * {
   box-sizing: border-box;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
@@ -192,5 +157,8 @@ h5 {
 h6 {
   font-size: 14px;
   font-weight: 500; }
+
+#mainRegion, #headerRegion, #footerRegion {
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
