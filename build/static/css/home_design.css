@@ -2,7 +2,7 @@
     width: 100%;
 }
 
-#area-nav ul {
+.area-nav ul {
     display:flex;
     justify-content:flex-end;
     height: 60px;
@@ -10,14 +10,30 @@
     align-items:center;
 }
 
-#hero {
+
+/*---------------------------------------------------
+Sets the hero background images for the area sections
+-----------------------------------------------------*/
+
+.tc {
+    background: url(../images/hero_tc.png)no-repeat center center;
+}
+
+.pass {
+    background: url(../images/hero_pass.png)no-repeat center center;
+}
+
+.hero {
     width: 100%;
-    height: 350px;
-    background: url(../images/hero_pass.png);
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #hero img {
@@ -41,26 +57,34 @@
 /*------------------------------
 Area Nav Styles
 -------------------------------*/
-#area-nav li {
+.area-nav li {
     margin: 1em;
     text-transform: uppercase;
     font-size: .8em;
 }
 
-#area-nav li:last-child {
+.area-nav li:last-child {
     padding-right: 1em;
 }
 
-#area-nav a {
-    color: #1E1E1E;
+.area-nav a {
+    color: #999999;
 }
 
-#area-nav a:hover {
+.pass-color a:hover {
     color: #EAAF05;
 }
 
-#area-nav a.current {
+.tc-color a:hover {
+    color: #4F0000;
+}
+
+.pass-color a.current {
     color: #EAAF05;
+}
+
+.tc-color a.current {
+    color: #4F0000;
 }
 
 /*------------------------------
@@ -101,20 +125,38 @@ Main Content Styles
     line-height: 1.5em;
 }
 
-.pass-btn {
-    color: 1E1E1E;
+/*------------------------------
+button styles
+-------------------------------*/
+
+.btn {
+    color: white;
     font-style: bold;
-    background-color: #EAAF05;
     padding: 1.5em;
     margin: 2em;
     border-radius: 5px;
     transition: all 500ms ease-in-out;
 }
 
-.pass-btn:hover {
-    padding: 2em;
-    color:#262626;
-    
+.btn:hover {
+    padding: 2em; 
+}
+
+.btn-pass-color {
+    background: #EAAF05;
+}
+
+.btn-tc-color {
+   /* background: #6E0200;*/
+    background: #ef144d;
+}
+
+.btn-wrc-color: {
+    background: #E74211;
+}
+
+.btn-pass-color:hover {
+        color:#262626;
 }
 
 .space-after {
@@ -158,7 +200,7 @@ Media Queries for tablet
         width: 100%;
     }
 
-    #hero {
+    .hero {
         height: 200px;
     }
 }
@@ -167,14 +209,14 @@ Media Queries for tablet
 Media Queries for mobile
 --------------------------*/
 @media (max-width: 550px) {
-    #area-nav ul {
+    .area-nav ul {
     -webkit-flex-direction: column;
     -ms-flex-direction:column;
     flex-direction: column;
     height: auto;
     }
 
-    #area-nav ul li {
+    .area-nav ul li {
       width: 100%;
       padding: 1em;
       background-color: #EAEAEA; 
