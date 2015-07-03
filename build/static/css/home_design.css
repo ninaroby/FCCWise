@@ -23,6 +23,14 @@ Sets the hero background images for the area sections
     background: url(../images/hero_pass.png)no-repeat center center;
 }
 
+.wrc {
+    background: url(../images/hero_wrc.png)no-repeat center center;
+}
+
+.etc {
+    background: url(../images/hero_etc.png)no-repeat center center;
+}
+
 .hero {
     width: 100%;
     height: 250px;
@@ -76,7 +84,11 @@ Area Nav Styles
 }
 
 .tc-color a:hover {
-    color: #4F0000;
+    color: #d0103a;
+}
+
+.wrc-color a:hover {
+    color: #e74211;
 }
 
 .pass-color a.current {
@@ -84,7 +96,11 @@ Area Nav Styles
 }
 
 .tc-color a.current {
-    color: #4F0000;
+    color: #d0103a;
+}
+
+.wrc-color a.current {
+    color: #e74211;
 }
 
 /*------------------------------
@@ -111,7 +127,6 @@ Main Content Styles
     flex-grow: 1;
     min-width: 400px;
     text-align: center;
-    background-color: #D0D0D0;
     padding: 1em;
 }
 
@@ -151,11 +166,11 @@ button styles
     background: #ef144d;
 }
 
-.btn-wrc-color: {
-    background: #E74211;
+.btn-wrc-color {
+    background: #e74211;
 }
 
-.btn-pass-color:hover {
+.btn:hover {
         color:#262626;
 }
 
@@ -174,6 +189,44 @@ button styles
 .inline-link:hover {
     background-color: #BABABA;
 }
+
+/*------------------------------
+Table Styles
+-------------------------------*/
+table {
+    margin: 0 1em 1em 0;
+}
+table, th, td {
+    border: 1px solid #666666;
+    padding: .5em;
+}
+
+#data th {
+    background-color: #CCCCCC;
+    font-size: 1em;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#data tr:nth-child(odd) {
+    background-color: #CCCCCC;
+}
+
+/*------------------------------
+List Styles
+-------------------------------*/
+.content li {
+    line-height: 1.5em;
+    list-style-type: circle;
+    margin-left: 1em;
+}
+
+iframe {
+    width: 95%;
+    height: calc(100vw / 3.14159);
+}
+
 
 /*-------------------------
 Media Queries for tablet
@@ -198,6 +251,7 @@ Media Queries for tablet
     #primary-content aside {
         flex-grow:0;
         width: 100%;
+        background-color: #D0D0D0;
     }
 
     .hero {
@@ -224,6 +278,23 @@ Media Queries for mobile
       margin: 0;
       border: 1px solid #E8A600; 
     }
+
+    .tc-color ul li {
+      border: 1px solid #d0103a;
+    }
+
+    .wrc-color ul li {
+      border: 1px solid #e74211;
+    }
+
+/*------------------------------
+video styles
+-------------------------------*/
+
+iframe {
+    width: 95%;
+    height: calc(100vw / 1.8);
+}
 
 }
 
