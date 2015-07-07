@@ -6,14 +6,29 @@
 angular.module('starter', ['ionic'])
 
 .run(function($ionicPlatform) {
-  $ionicPlatform.ready(function() {
-    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-    // for form inputs)
-    if(window.cordova && window.cordova.plugins.Keyboard) {
-      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-    }
-    if(window.StatusBar) {
-      StatusBar.styleDefault();
-    }
-  });
+    $ionicPlatform.ready(function() {
+        // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+        // for form inputs)
+        if(window.cordova && window.cordova.plugins.Keyboard) { cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true); }
+        if(window.StatusBar) { StatusBar.styleDefault(); }
+    })
+})
+
+.config(function($stateProvider, $urlRouterProvider) {
+    $stateProvider.state('navigator', {
+        abstract: true,
+        templateUrl: 'templates/shell.html'
+    }).state('navigator.home', {
+        url: '/home',
+        views: {
+            'home': {
+                templateUrl: 'templates/home.html'
+            }
+        }
+    })
+    $urlRouterProvider.otherwise('/home')
+})
+
+.controller('ViewController', ['$scope', '$http'], function($scope, $http) {
+
 })

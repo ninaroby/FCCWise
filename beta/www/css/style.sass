@@ -10,13 +10,38 @@ $wrc-red: #d0103a
 $pass-yellow: #eaaf05
 $ws-orange: #dd3706
 
-*
-    box-sizing: border-box
-    overflow-x: hidden
-
+body
+    background: #aaa
 
 //  header and slide-menu styles
-
+#slide-menu
+    max-width: 300px
+    & *
+        border-right: none
+        border-left: none
+    & ion-item
+        padding: 15px
 
 //  footer styles
-
+.bar-footer, .bar-footer ul, .bar-footer section
+    background: $fcc-red
+    display: flex
+    display: -webkit-flex
+    justify-content: space-between
+    -webkit-justify-content: space-between
+    align-items: center
+    -webkit-align-items: center
+.bar-footer
+    height: inherit
+    max-height: 100px
+    background: $fcc-red
+    & img
+        width: 20%
+        padding: 5px 0
+    & ul li
+        padding: 0 15px
+    & section
+        flex-direction: column
+        -webkit-flex-direction: column
+        align-items: flex-start
+        -webkit-align-items: flex-start
