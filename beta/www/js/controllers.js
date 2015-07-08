@@ -1,7 +1,10 @@
 angular.module('starter.controllers', [])
 
-.controller('ViewController', function($scope, $ionicModal, $ionicHistory) {
+.controller('ViewController', function($scope, $ionicModal, $ionicHistory, $sce) {
     $scope.reportData = {}
+    $scope.trustSrc = function(src) {
+        return $sce.trustAsResourceUrl(src);
+    }
 
     // modal view for the suggestion link
     $ionicModal.fromTemplateUrl('templates/suggestions.html', {
@@ -26,5 +29,7 @@ angular.module('starter.controllers', [])
 
         // close when done
         $scope.closeModal()
+        document.querySelector('textarea').value = ''
+        document.querySelector('input').value = ''
     }
 })
