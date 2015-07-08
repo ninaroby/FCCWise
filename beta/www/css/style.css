@@ -51,7 +51,36 @@ a {
   .bar-footer a {
     text-decoration: none; }
 
-@media screen and (max-width: 640px) {
+.grid-container, .extras, .grid {
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap; }
+
+.grid-container, .extras {
+  overflow-x: hidden; }
+  .grid-container .articles, .extras .articles {
+    width: 33%;
+    padding: 1.5%;
+    display: inline-block; }
+  .grid-container .grid, .extras .grid {
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    width: 45%; }
+    .grid-container .grid a, .extras .grid a {
+      flex-basis: 26%;
+      -webkit-flex-basis: 26%;
+      margin: 14px; }
+      .grid-container .grid a img, .extras .grid a img {
+        height: 100%;
+        width: 100%; }
+
+@media screen and (max-width: 480px) {
   .grid-container, .extras, .grid {
     width: 100%;
     display: flex;
@@ -67,7 +96,8 @@ a {
     overflow-x: hidden; }
     .grid-container .grid, .extras .grid {
       flex-direction: row;
-      -webkit-flex-direction: row; }
+      -webkit-flex-direction: row;
+      width: 100%; }
       .grid-container .grid a, .extras .grid a {
         flex-basis: 26%;
         -webkit-flex-basis: 26%;
