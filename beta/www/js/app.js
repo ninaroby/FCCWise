@@ -14,7 +14,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     })
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
+    $ionicConfigProvider.views.transition('none')
     $stateProvider
 
     // the default route provider for the things that will never change on the page
