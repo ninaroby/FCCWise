@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('ViewController', function($scope, $ionicModal) {
+.controller('ViewController', function($scope, $ionicModal, $ionicHistory) {
     $scope.reportData = {}
 
     // modal view for the suggestion link
@@ -16,6 +16,7 @@ angular.module('starter.controllers', [])
 
     $scope.showModal = function() {
         $scope.modal.show()
+        $scope.reportData.currentPage = $ionicHistory.currentTitle()
     }
 
     $scope.doSuggestion = function() {
