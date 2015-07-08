@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('ViewController', function($scope, $ionicModal) {
+.controller('ViewController', function($scope, $ionicModal, $ionicConfigProvider) {
     $scope.reportData = {}
 
     // modal view for the suggestion link
