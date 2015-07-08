@@ -34,5 +34,86 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             }
         }
     })
+    // route for the tutorial center
+    .state('navigator.tc', {
+        url: '/tutorial-center',
+        views: {
+            'home': {
+                templateUrl: 'templates/tc.html',
+            }
+        }
+    })
+    // route for the wrting and reading center
+    .state('navigator.wrc', {
+        url: '/writing-reading-center',
+        views: {
+            'home': {
+                templateUrl: 'templates/wrc.html',
+            }
+        }
+    })
+    // route for ETC
+    .state('navigator.etc', {
+        url: '/extending-the-class',
+        views: {
+            'home': {
+                templateUrl: 'templates/etc.html',
+            }
+        }
+    })
+    // route for PASS
+    .state('navigator.pass', {
+        url: '/pass',
+        views: {
+            'home': {
+                templateUrl: 'templates/pass.html',
+            }
+        }
+    })
+    // route for finding a tutor
+    .state('navigator.search', {
+        url: '/search',
+        views: {
+            'home': {
+                templateUrl: 'templates/search.html',
+            }
+        }
+    })
+    // route for become a tutor
+    .state('navigator.application', {
+        url: '/become-a-tutor',
+        views: {
+            'home': {
+                templateUrl: 'templates/tutor-application.html',
+            }
+        }
+    })
+    // route for the calendar
+    .state('navigator.calendar', {
+        url: '/calendar',
+        views: {
+            'home': {
+                templateUrl: 'templates/calendar.html',
+            }
+        }
+    })
+    // route for online tutoring
+    .state('navigator.online-tutoring', {
+        url: '/online-tutoring',
+        views: {
+            'home': {
+                templateUrl: 'templates/online-tutoring.html',
+            }
+        }
+    })
+    // route for the educational resources
+    .state('navigator.resources', {
+        url: '/resources',
+        views: {
+            'home': {
+                templateUrl: 'templates/resources.html',
+            }
+        }
+    })
     $urlRouterProvider.otherwise('/home')
 })

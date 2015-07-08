@@ -6,6 +6,9 @@
             <ion-nav-buttons side="left">
                 <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
             </ion-nav-buttons>
+            <ion-nav-buttons side='right'>
+                <button class="button button-icon ion-bug" menu-toggle='right' ng-click='showModal()'></button>
+            </ion-nav-button>
         </ion-nav-bar>
         <ion-nav-view name="home"></ion-nav-view>
     </ion-side-menu-content>
@@ -16,9 +19,16 @@
         <ion-content>
             <ion-list>
                 <ion-item menu-close href='#/home'>Home</ion-item>
-                <ion-item menu-close href="#/app/search">Search</ion-item>
-                <ion-item menu-close href="#/app/browse">Browse</ion-item>
-                <ion-item menu-close href="#/app/playlists">Playlists</ion-item>
+                <ion-item menu-close href="#/tutorial-center">Tutorial Center</ion-item>
+                <ion-item menu-close href="#/writing-reading-center">Writing &amp; Reading Center</ion-item>
+                <ion-item menu-close href="#/extending-the-class">Extending the Class</ion-item>
+                <ion-item menu-close href="#/pass">PASS</ion-item>
+                <ion-item menu-close href="#/search">Find a Tutor</ion-item>
+                <ion-item menu-close href="#/become-a-tutor">Become a Tutor</ion-item>
+                <ion-item menu-close href="#/calendar">Workshop Calendar</ion-item>
+                <ion-item menu-close href="#/online-tutoring">Online Tutoring</ion-item>
+                <ion-item menu-close href="#/resources">Educational Resources</ion-item>
+                <ion-item menu-close ng-click='showModal()'>Have a Suggestion?</ion-item>
             </ion-list>
         </ion-content>
     </ion-side-menu>
@@ -30,7 +40,7 @@
         <span>1101 E.University Avenue, Fresno, CA 93741 Tel: 559-442-4600</span>
     </section>
     <ul>
-        <li><a href="http://fresnocitycollege.edu" target='_blank'>Fresno City College Home</a></li>
+        <li><a href="http://fresnocitycollege.edu" target='_blank'>Fresno City College</a></li>
         <li><a href="https://blackboard.fresnocitycollege.edu" target='_blank'>Blackboard</a></li>
         <li><a href="http://webadvisor.scccd.edu/" target='_blank'>Web Advisor</a></li>
         <li><a href="https://login.live.com" target='_blank'>Student Email</a></li>
