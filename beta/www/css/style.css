@@ -1,13 +1,9 @@
 body {
   background: #aaa; }
 
-#slide-menu {
-  max-width: 300px; }
-  #slide-menu * {
-    border-right: none;
-    border-left: none; }
-  #slide-menu ion-item {
-    padding: 15px; }
+.bar-assertive {
+  background: #d0103a !important;
+  border-color: #d0103a !important; }
 
 .bar-footer, .bar-footer ul, .bar-footer section {
   background: #d0103a;
@@ -21,7 +17,8 @@ body {
 .bar-footer {
   height: inherit;
   max-height: 100px;
-  background: #d0103a; }
+  background: #d0103a;
+  color: #fff; }
   .bar-footer img {
     width: 20%;
     padding: 5px 0; }
