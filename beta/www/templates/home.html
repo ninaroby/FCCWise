@@ -22,16 +22,9 @@
         <div class="grid-container gray">
             <h2>News &amp; Upcoming Events</h2>
             <section class='articles'>
-                <article>
-                    <h4>Some header stuff</h4>consectetur adipisicing elit. Cumque, architecto sapiente? Aliquid dicta nam tenetur possimus aspernatur minus a, autem quasi, dolor facilis esse aperiam voluptatum cum iusto accusantium corrupti.</p>
-                </article>
-                <article>
-                    <h4>Some header stuff</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores perspiciatis doloremque impedit. Inventore nihil ipsa eligendi optio atque, rerum reiciendis aliquid hic, numquam, cumque nemo voluptatem, voluptates saepe a eius?</p>
-                </article>
-                <article>
-                    <h4>Some header stuff</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio qui quaerat debitis aspernatur dicta impedit id asperiores eos omnis, totam, in ipsum? Enim blanditiis explicabo facere sunt ipsum. Corporis.</p>
+                <article ng-repeat='(key, value) in news'>
+                    <h4>{{value.title}}</h4>
+                    <p>{{value.synopsis | limitTo: 90}}{{value.synopsis.length > 90 ? '&hellip;': ''}}</p>
                 </article>
             </section>
         </div>
