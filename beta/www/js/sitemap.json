@@ -1,52 +1,56 @@
 [
     {
-        "path": "",
-        "thumbnail": "",
-        "title": ""
+        "path": "#/search",
+        "thumbnail": "img/tutor_search.png",
+        "alt": "Tutor Search",
+        "title": "Find a Tutor"
     },
     {
-        "path": "",
-        "thumbnail": "",
-        "title": ""
+        "path": "#/extending-the-class",
+        "thumbnail": "img/etc.png",
+        "alt": "Extending the Class",
+        "title": "Extending the Class"
     },
     {
-        "path": "",
-        "thumbnail": "",
-        "title": ""
+        "path": "#/tutorial-center",
+        "thumbnail": "img/tc.png",
+        "alt": "Tutorial Center",
+        "title": "Tutorial Center"
     },
     {
-        "path": "",
-        "thumbnail": "",
-        "title": ""
+        "path": "#/writing-reading-center",
+        "thumbnail": "img/wrc.png",
+        "alt": "Writing & Reading Center",
+        "title": "Writing & Reading Center"
     },
     {
-        "path": "",
-        "thumbnail": "",
-        "title": ""
+        "path": "#/pass",
+        "thumbnail": "img/pass.png",
+        "alt": "PASS",
+        "title": "PASS"
     },
     {
-        "path": "",
-        "thumbnail": "",
-        "title": ""
+        "path": "#/become-a-tutor",
+        "thumbnail": "img/b_tutor.png",
+        "alt": "Become a Tutor",
+        "title": "Become a Tutor"
     },
     {
-        "path": "",
-        "thumbnail": "",
-        "title": ""
+        "path": "#/calendar",
+        "thumbnail": "img/workshops.png",
+        "alt": "Workshop Calendar",
+        "title": "Workshop Calendar"
     },
     {
-        "path": "",
-        "thumbnail": "",
-        "title": ""
+        "path": "#/online-tutoring",
+        "thumbnail": "img/online.png",
+        "alt": "Online Tutoring",
+        "title": "Online Tutoring"
     },
     {
-        "path": "",
-        "thumbnail": "",
-        "title": ""
-    },
-    {
-        "path": "",
-        "thumbnail": "",
-        "title": ""
+        "path": "#/resources",
+        "thumbnail": "img/ed_resources.png",
+        "alt": "Eductational Resources",
+        "title": "Eductational Resources"
     }
 ]

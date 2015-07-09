@@ -1,6 +1,11 @@
 angular.module('starter.controllers', [])
 
 .controller('ViewController', function($scope, $http, $ionicModal, $ionicHistory, $sce) {
+    // grab the site links
+    $http.get('js/sitemap.json').success(function(data) {
+        $scope.links = data
+    })
+
     // grab the news and updates file
     $http.get('js/news.json').success(function(data) {
         $scope.news = data

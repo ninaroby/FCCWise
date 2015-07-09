@@ -8,15 +8,7 @@
     <ion-content class='has-header has-subheader padding'>
         <div class="grid-container">
             <section class='grid'>
-                <a href='#/search'><img src="img/tutor_search.png" alt="Tutor Search"></a>
-                <a href='#/extending-the-class'><img src="img/etc.png" alt="Extending the Class"></a>
-                <a href='#/tutorial-center'><img src="img/tc.png" alt="Tutorial Center"></a>
-                <a href='#/writing-reading-center'><img src="img/wrc.png" alt="WRC"></a>
-                <a href='#/pass'><img src="img/pass.png" alt="PASS"></a>
-                <a href='#/become-a-tutor'><img src="img/b_tutor.png" alt="Become a Tutor"></a>
-                <a href='#/calendar'><img src="img/workshops.png" alt="Workshop Calendar"></a>
-                <a href='#/online-tutoring'><img src="img/online.png" alt="Online Tutoring"></a>
-                <a href='#/resources'><img src="img/ed_resources.png" alt="Eductational Resources"></a>
+                <a ng-repeat='items in links' href='{{items.path}}'><img ng-src="{{items.thumbnail}}" alt="{{items.alt}}"></a>
             </section>
         </div>
         <div class="grid-container gray">
