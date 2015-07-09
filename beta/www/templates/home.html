@@ -24,7 +24,7 @@
             <section class='articles'>
                 <article ng-repeat='(key, value) in news'>
                     <h4>{{value.title}}</h4>
-                    <p>{{value.synopsis | limitTo: 90}}{{value.synopsis.length > 90 ? '&hellip;': ''}}</p>
+                    <p>{{value.synopsis | limitTo: 100}}{{value.synopsis.length > 100 ? '&hellip;': ''}}</p>
                 </article>
             </section>
         </div>
