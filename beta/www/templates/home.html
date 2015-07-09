@@ -1,5 +1,11 @@
 <ion-view view-title='FCC Wise'>
-    <ion-content class='has-header padding'>
+    <div class="bar bar-subheader item-input-inset bar-light bar-custom">
+        <label class="item-input-wrapper">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="search" placeholder='Search' ng-model='query'>
+        </label>
+    </div>
+    <ion-content class='has-header has-subheader padding'>
         <div class="grid-container">
             <section class='grid'>
                 <a href='#/search'><img src="img/tutor_search.png" alt="Tutor Search"></a>
@@ -15,7 +21,7 @@
         </div>
         <div class="grid-container gray">
             <h2>News &amp; Upcoming Events</h2>
-            <section class='articles'>
+            <section class='articles' ng-repeat=''>
                 <article>
                     <h4>Some header stuff</h4>consectetur adipisicing elit. Cumque, architecto sapiente? Aliquid dicta nam tenetur possimus aspernatur minus a, autem quasi, dolor facilis esse aperiam voluptatum cum iusto accusantium corrupti.</p>
                 </article>
@@ -33,10 +39,6 @@
             <section>
                 <iframe type='text/html' ng-src="{{trustSrc('https://www.youtube.com/embed/38MJCRCOzwU')}}" allowfullscreen frameborder="0"></iframe>
             </section>
-            <aside>
-                <h3>Header</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, eius eaque blanditiis odio placeat ex soluta autem ipsam ipsum eveniet ea fugiat rem iste adipisci. Labore mollitia nisi, aliquid quos.Tempora beatae, similique odio aperiam dolore quis exercitationem nobis fugit cum quasi, consequatur officiis qui mollitia nulla magni non. Maiores fugiat voluptatem vero? Consectetur unde doloribus earum, alias exercitationem ullam.Architecto vitae voluptate incidunt autem minima repellendus, aperiam voluptatibus odio quisquam, deserunt ipsam. Eveniet incidunt placeat suscipit asperiores laudantium porro dolor! Ipsum, id perferendis dolore dignissimos nostrum delectus sint debitis.</p>
-            </aside>
         </div>
     </ion-content>
 </ion-view>
