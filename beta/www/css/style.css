@@ -41,6 +41,10 @@ a {
     align-items: flex-start;
     -webkit-align-items: flex-start;
     max-width: 50%; }
+  .bar-footer a {
+    transition: all 500mx ease-in-out; }
+  .bar-footer a:hover {
+    color: #D8D8D8; }
 
 .grid-container, .extras, .grid {
   display: flex;
