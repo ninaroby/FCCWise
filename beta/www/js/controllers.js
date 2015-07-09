@@ -29,7 +29,6 @@ angular.module('starter.controllers', [])
 
         // close when done
         $scope.closeModal()
-        document.querySelector('textarea').value = ''
         document.querySelector('input').value = ''
     }
 })
