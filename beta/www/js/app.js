@@ -99,15 +99,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             }
         }
     })
-    // route for online tutoring
-    .state('navigator.online-tutoring', {
-        url: '/online-tutoring',
-        views: {
-            'home': {
-                templateUrl: 'templates/online-tutoring.html',
-            }
-        }
-    })
     // route for the educational resources
     .state('navigator.resources', {
         url: '/resources',
