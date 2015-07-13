@@ -71,7 +71,7 @@ a {
     text-align: center;
     margin-bottom: 30px; }
     .grid-container section iframe, .extras section iframe {
-      height: calc(100vw / 2.8);
+      height: calc(100vw / 2.6);
       width: 65%; }
   .grid-container .grid, .extras .grid {
     flex-direction: row;
@@ -284,10 +284,6 @@ th, td {
   list-style-type: circle;
   margin-left: 1em; }
 
-iframe {
-  width: 95%;
-  height: calc(100vw / 3.14159); }
-
 @media (max-width: 900px) {
   #primary-content {
     -webkit-flex-direction: column;
@@ -330,7 +326,7 @@ iframe {
   .wrc-color ul li {
     border: 1px solid #e74211; } }
 iframe {
-  width: 95%;
-  height: calc(100vw / 1.8); }
+  height: calc(100vw / 3.8);
+  width: 65%; }
 
 /*# sourceMappingURL=style.css.map */
