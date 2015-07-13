@@ -1,21 +1,12 @@
 angular.module('starter.controllers', [])
 
 .controller('ViewController', function($scope, $http, $ionicModal, $ionicHistory, $sce) {
-    // get the site links
-    $http.get('js/sitemap.json').success(function(data) {
-        $scope.links = data
+    // get the site links, news, and tutor datastore
+    $http.get('js/store.js').success(function(data) {
+        $scope.tutors = data.tutors
+        $scope.news = data.news
+        $scope.links = data.sitemap
     })
-
-    // get the news and updates file
-    $http.get('js/news.json').success(function(data) {
-        $scope.news = data
-    })
-
-    $scope.getTutors = function() {
-        $http.get('js/tutors.js').success(function(data) {
-            $scope.tutors = data
-        })
-    }
 
     // url safe linking
     $scope.trustSrc = function(src) {

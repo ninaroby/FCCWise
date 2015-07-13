@@ -1,7 +1,18 @@
 <ion-view view-title='Find a Tutor'>
     <ion-content class='has-header padding'>
-        <div id="wrapper">
-            
-        </div>
+        <ion-list>
+            <ion-item ng-repeat='person in tutors' class='item-avatar item-text-wrap'>
+                <img ng-src="{{person.thumbnail}}" alt="">
+                <p>Name: {{person.fullName}}</p>
+                <p>Subjects: <span ng-repeat='subjects in person.subjects'>{{subjects}} </span></p>
+                <p>Courses: <span ng-repeat='courses in person.courses'>{{courses}} </span></p>
+                <p>{{person.etc === false ? '' : 'ETC'}}</p>
+                <p ng-repeat='(item, details) in person.schedule'>
+                    {{details.weekday}}:
+                    {{details.details[item].times}}
+                    {{details.details[item].location}}
+                </p>
+            </ion-item>
+        </ion-list>
     </ion-content>
 </ion-view>
