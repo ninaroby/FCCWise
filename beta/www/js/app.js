@@ -45,7 +45,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
             }
         }
     })
-    .state('navigator.tc', {
+    .state('navigator.staff', {
         url: '/tutorial-center/meet-staff',
         views: {
             'home': {
