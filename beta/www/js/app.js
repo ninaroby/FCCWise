@@ -49,7 +49,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
         url: '/tutorial-center/meet-staff',
         views: {
             'home': {
-                templateUrl: 'meet-staff.html'
+                templateUrl: 'templates/meet-staff.html'
             }
         }
     })
