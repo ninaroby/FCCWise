@@ -54,7 +54,7 @@ a
         -webkit-align-items: flex-start
         max-width: 50%
     a
-        transition: all 500mx ease-in-out
+        transition: all 500ms ease-in-out
     a:hover
         color: #D8D8D8
 
@@ -200,6 +200,7 @@ a
         padding-right: 1em
     a
         color: #999999
+        transition: all 500ms ease-in-out
 
 .pass-color a:hover
     color: #EAAF05
@@ -210,6 +211,9 @@ a
 .wrc-color a:hover
     color: #e74211
 
+.etc-color a:hover
+    color: rgb(153, 14, 103)
+
 .pass-color a.current
     color: #EAAF05
 
@@ -218,6 +222,9 @@ a
 
 .wrc-color a.current
     color: #e74211
+
+.etc-color a.current
+    color: rgb(153, 14, 103)
 
 // Main Content Styles
 
@@ -287,6 +294,15 @@ a
     transition: all 500mx ease-in-out
     &:hover
         background-color: #BABABA
+
+// Generic link styles
+
+.content a 
+    color: #D0103A
+    transition: all 500ms ease-in-out
+
+.content a:hover 
+    color: #000000
 
 // Table Styles
 
