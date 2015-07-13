@@ -45,6 +45,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
             }
         }
     })
+    .state('navigator.tc', {
+        url: '/tutorial-center/meet-staff',
+        views: {
+            'home': {
+                templateUrl: 'meet-staff.html'
+            }
+        }
+    })
     // route for the wrting and reading center
     .state('navigator.wrc', {
         url: '/writing-reading-center',
