@@ -327,6 +327,7 @@ th, td {
     border: 1px solid #e74211; } }
 iframe {
   height: calc(100vw / 3.8);
-  width: 65%; }
+  width: 65%;
+  margin-bottom: 2em; }
 
 /*# sourceMappingURL=style.css.map */
