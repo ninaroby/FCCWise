@@ -1,11 +1,15 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', ['firebase'])
 
-.controller('ViewController', function($scope, $http, $ionicModal, $ionicHistory, $sce) {
-    // get the site links, news, and tutor datastore
+.controller('ViewController', function($scope, $http, $ionicModal, $ionicHistory, $sce, $firebaseArray) {
+    // get the tutor datastore
+    var ref = new Firebase('https://fccwise-search.firebaseio.com/tutors')
+    $scope.tutors = $firebaseArray(ref)
+
+    // get the links and stuff
     $http.get('js/store.js').success(function(data) {
-        $scope.tutors = data.tutors
-        $scope.news = data.news
         $scope.links = data.sitemap
+        $scope.news = data.news
+        $scope.calendar = data.calendar
     })
 
     // url safe linking

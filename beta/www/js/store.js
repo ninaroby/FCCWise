@@ -72,68 +72,6 @@
             "title": "Eductational Resources"
         }
     ],
-    "tutors": [
-        {
-            "fullName": "Julian Coleman",
-            "firstName": "Julian",
-            "lastName": "Coleman",
-            "thumbnail": "https://avatars1.githubusercontent.com/u/11545939?v=3&s=460",
-            "subjects": ["Computer Science", "Web Design"],
-            "courses": ["CSCI-40", "CSCI-41", "CIT-62", "CIT-85"],
-            "etc": false,
-            "schedule": [
-                {
-                    "weekday": "Monday",
-                    "details": [
-                        {
-                            "times": "8:00 AM - 4:30 PM",
-                            "location": "Tutorial Center"
-                        }
-                    ]
-                },
-                {
-                    "weekday": "Tuesday",
-                    "details": [
-                        {
-                            "times": "8:00 AM - 12:00 PM",
-                            "location": "Tutorial Center"
-                        },
-                        {
-                            "times": "1:00 PM - 4:30 PM",
-                            "location": "Tutorial Center"
-                        }
-                    ]
-                },
-                {
-                    "weekday": "Wednesday",
-                    "details": [
-                        {
-                            "times": "8:00 AM - 4:30 PM",
-                            "location": "Tutorial Center"
-                        }
-                    ]
-                },
-                {
-                    "weekday": "Thursday",
-                    "details": [
-                        {
-                            "times": "8:00 AM - 4:30 PM",
-                            "location": "Tutorial Center"
-                        }
-                    ]
-                },
-                {
-                    "weekday": "Friday",
-                    "details": [
-                        {
-                            "times": "8:00 AM - 4:30 PM",
-                            "location": "Tutorial Center"
-                        }
-                    ]
-                }
-            ]
-        }
-    ],
     "calendar": [
 
     ]
