@@ -116,7 +116,7 @@
         "firstName": "Mileena",
         "lastName": "Garcia",
         "thumbnail": "http://fccwise.fresnocitycollege.edu/tutorialcenter/searchtutor/images/mileena.jpg",
-        "subjects": ["Math"],
+        "subjects": ["Algebra", "Trigonometry", "Precalculus", "Calculus"],
         "courses": ["Math-103", "Math-260 (A, B, C, D)", "Math-4A", "Math-4B", "Math-5A", "Math-5B"],
         "etc": false,
         "schedule": [
@@ -167,4 +167,4 @@
             }
         ]
     }
-],
+]

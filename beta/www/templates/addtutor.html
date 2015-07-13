@@ -1,5 +1,41 @@
 <ion-view view-title='Add a Tutor'>
     <ion-content class='has-header'>
-        
+        <form ng-submit="addTutor()">
+            <div class="list">
+                <label class="item item-input">
+                    <input type="text" ng-model="newTutor.firstName" placeholder='First Name'>
+                </label>
+                <label class="item item-input">
+                    <input type="text" ng-model="newTutor.lastName" placeholder='Last Name'>
+                </label>
+                <label class="item item-input">
+                    <input type="text" ng-model="newTutor.subjects" placeholder='Subjects'>
+                </label>
+                <label class="item item-input">
+                    <input type="text" ng-model="newTutor.courses" placeholder='Courses'>
+                </label>
+                <label class="item item-input">
+                    <input type="text" ng-model="newTutor.monday" placeholder='Monday'>
+                </label>
+                <label class="item item-input">
+                    <input type="text" ng-model="newTutor.tuesday" placeholder='Tuesday'>
+                </label>
+                <label class="item item-input">
+                    <input type="text" ng-model="newTutor.wednesday" placeholder='Wednesday'>
+                </label>
+                <label class="item item-input">
+                    <input type="text" ng-model="newTutor.thursday" placeholder='Thursday'>
+                </label>
+                <label class="item item-input">
+                    <input type="text" ng-model="newTutor.friday" placeholder='Friday'>
+                </label>
+                <label class="item item-input">
+                    <input type="text" ng-model="newTutor.saturday" placeholder='Saturday'>
+                </label>
+                <label class="item">
+                    <button class="button button-block button-assertive" type="submit">Submit</button>
+                </label>
+            </div>
+        </form>
     </ion-content>
 </ion-view>

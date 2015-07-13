@@ -2,7 +2,7 @@ angular.module('starter.controllers', ['firebase'])
 
 .controller('ViewController', function($scope, $http, $ionicModal, $ionicHistory, $sce, $firebaseArray) {
     // get the tutor datastore
-    var ref = new Firebase('https://fccwise-search.firebaseio.com/tutors')
+    var ref = new Firebase('https://fccwise-search.firebaseio.com/')
     $scope.tutors = $firebaseArray(ref)
 
     // get the links and stuff

@@ -9,16 +9,16 @@
         <ion-list>
             <ion-item ng-repeat='person in tutors | filter: query' class='item-avatar item-text-wrap'>
                 <img ng-src="{{person.thumbnail}}" alt="">
-                <p>Name: {{person.fullName}}</p>
-                <p>Subjects: <span ng-repeat='subject in person.subjects'>{{subject}}{{$last ? '' : ', '}} </span></p>
-                <p>Courses: <span ng-repeat='course in person.courses'>{{course}}{{$last ? '' : ', '}} </span></p>
+                <h2>{{person.fullName}}</h2>
+                <p><span ng-repeat='subject in person.subjects'>{{subject}}{{$last ? '' : ', '}}</span></p>
+                <p><span ng-repeat='course in person.courses'>{{course}}{{$last ? '' : ', '}}</span></p>
                 <p ng-show='person.etc'>{{person.etc}}</p>
                 <p ng-repeat='item in person.schedule'>
                     {{item.weekday}}:
-                    <span ng-repeat='(sec, dip) in item.details'>
-                        {{dip.times}}{{$last ? '' : ', '}}
-                        {{dip.instructor}}{{!dip.instructor ? '' : ', '}}
-                        {{dip.location === "Tutorial Center" || dip.location === '' || !dip.location ? '' : dip.location}}
+                    <span ng-repeat='(_, details) in item.details'>
+                        {{details.times}}{{$last ? '' : ', '}}
+                        {{details.instructor}}{{!details.instructor ? '' : ', '}}
+                        {{details.location === "Tutorial Center" || details.location === '' || !details.location ? '' : details.location}}
                     </span>
                 </p>
             </ion-item>
