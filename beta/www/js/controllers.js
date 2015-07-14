@@ -1,9 +1,19 @@
 angular.module('starter.controllers', ['firebase'])
 
-.controller('ViewController', function($scope, $http, $ionicModal, $ionicHistory, $sce, $firebaseArray) {
-    // get the tutor datastore
-    var ref = new Firebase('https://fccwise-search.firebaseio.com/')
-    $scope.tutors = $firebaseArray(ref)
+.controller('ViewController', function($scope, $http, $ionicModal, $ionicHistory, $sce, GetData, FIREBASE_URL) {
+    // get the tutor datastore from Firebase
+    $scope.tutors = GetData
+    var ref = new Firebase(FIREBASE_URL)
+    // add tutors to Firebase
+    $scope.addTutor = function() {
+        ref.push($scope.tutor)
+    }
+    // remove tutors from Firebase
+    $scope.removeTutor = function(deleteID) {
+        console.log(deleteID)
+        var deleteRef = new Firebase(FIREBASE_URL + deleteID)
+        deleteRef.remove()
+    }
 
     // get the links and stuff
     $http.get('js/store.js').success(function(data) {
