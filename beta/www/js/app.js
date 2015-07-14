@@ -1,32 +1,20 @@
-// Ionic Starter App
-
-// angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
-// the 2nd parameter is an array of 'requires'
 angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
-
+.constant('FIREBASE_URL', 'https://fccwise-search.firebaseio.com/')
 .run(function($ionicPlatform) {
     $ionicPlatform.ready(function() {
-        // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-        // for form inputs)
         if(window.cordova && window.cordova.plugins.Keyboard) { cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true); }
         if(window.StatusBar) { StatusBar.styleDefault(); }
     })
 })
-
 .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider, $sceDelegateProvider) {
     $sceDelegateProvider.resourceUrlWhitelist(['self', 'http://youtube.com/**'])
-    // $ionicConfigProvider.views.transition('none')
     $stateProvider
-
-    // the default route provider for the things that will never change on the page
     .state('navigator', {
         url: '',
         abstract: true,
         templateUrl: 'templates/shell.html',
         controller: 'ViewController'
     })
-    // route for the home page
     .state('navigator.home', {
         url: '/home',
         views: {
@@ -36,7 +24,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
             }
         }
     })
-    // route for the tutorial center
     .state('navigator.tc', {
         url: '/tutorial-center',
         views: {
@@ -53,7 +40,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
             }
         }
     })
-    // route for the wrting and reading center
     .state('navigator.wrc', {
         url: '/writing-reading-center',
         views: {
@@ -62,7 +48,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
             }
         }
     })
-    // route for ETC
     .state('navigator.etc', {
         url: '/extending-the-class',
         views: {
@@ -71,7 +56,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
             }
         }
     })
-    // route for PASS
     .state('navigator.pass', {
         url: '/pass',
         views: {
@@ -80,7 +64,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
             }
         }
     })
-    // route for finding a tutor
     .state('navigator.search', {
         url: '/search',
         views: {
@@ -89,7 +72,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
             }
         }
     })
-    // route for become a tutor
     .state('navigator.application', {
         url: '/become-a-tutor',
         views: {
@@ -98,7 +80,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
             }
         }
     })
-    // route for the calendar
     .state('navigator.calendar', {
         url: '/calendar',
         views: {
@@ -107,7 +88,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
             }
         }
     })
-    // route for the educational resources
     .state('navigator.resources', {
         url: '/resources',
         views: {
@@ -116,14 +96,18 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
             }
         }
     })
-    // route for adding tutors
     .state('navigator.addTutor', {
         url: '/addtutor',
         views: {
             'home': {
-                templateUrl: 'templates/addtutor.html'
+                templateUrl: 'templates/addtutor.html',
+                controller: 'ViewController'
             }
         }
     })
     $urlRouterProvider.otherwise('/home')
+})
+.factory('GetData', function($firebaseArray, FIREBASE_URL) {
+    var ref = new Firebase(FIREBASE_URL)
+    return $firebaseArray(ref)
 })

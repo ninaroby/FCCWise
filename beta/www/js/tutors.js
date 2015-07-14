@@ -1,6 +1,5 @@
 [
     {
-        "fullName": "Julian Coleman",
         "firstName": "Julian",
         "lastName": "Coleman",
         "thumbnail": "https://avatars1.githubusercontent.com/u/11545939?v=3&s=460",
@@ -56,7 +55,6 @@
         ]
     },
     {
-        "fullName": "Nina Roby",
         "firstName": "Nina",
         "lastName": "Roby",
         "thumbnail": "https://avatars1.githubusercontent.com/u/8042343?v=3&s=460",
@@ -112,7 +110,6 @@
         ]
     },
     {
-        "fullName": "Mileena Garcia",
         "firstName": "Mileena",
         "lastName": "Garcia",
         "thumbnail": "http://fccwise.fresnocitycollege.edu/tutorialcenter/searchtutor/images/mileena.jpg",
