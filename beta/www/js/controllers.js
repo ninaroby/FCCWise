@@ -3,10 +3,9 @@ angular.module('starter.controllers', ['ngAnimate'])
 .controller('ViewController', function($scope, $http, $ionicModal, $ionicHistory, $sce, GetData, FIREBASE_URL) {
     // get the tutor datastore from Firebase
     $scope.tutors = GetData
-    var ref = new Firebase(FIREBASE_URL)
     // add tutors to Firebase
     $scope.addTutor = function() {
-        ref.push($scope.tutor)
+        GetData.$add($scope.tutor)
     }
     // remove tutors from Firebase
     $scope.removeTutor = function(deleteID) {

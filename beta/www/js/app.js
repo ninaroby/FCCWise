@@ -100,7 +100,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
         url: '/addtutor',
         views: {
             'home': {
-                templateUrl: 'templates/addtutor.html'
+                templateUrl: 'templates/addtutor.html',
+                controller: 'ViewController'
             }
         }
     })
