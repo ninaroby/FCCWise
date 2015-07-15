@@ -40,7 +40,6 @@ angular.module('starter.controllers', ['ngAnimate'])
     // add tutors to Firebase
     $scope.addTutor = function() {
         GetData.$add($scope.tutor)
-        console.dir($scope.tutor.schedule[0])
     }
     // remove tutors from Firebase
     $scope.removeTutor = function(deleteID) {
