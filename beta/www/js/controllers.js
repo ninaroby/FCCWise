@@ -3,10 +3,44 @@ angular.module('starter.controllers', ['ngAnimate'])
 .controller('ViewController', function($scope, $http, $ionicModal, $ionicHistory, $sce, GetData, FIREBASE_URL) {
     // get the tutor datastore from Firebase
     $scope.tutors = GetData
-    $scope.tutor = {}
+    $scope.tutor = {
+      schedule: [
+        {
+          weekday: "Monday",
+          details: []
+        },
+        {
+          weekday: "Tuesday",
+          details: []
+        },
+        {
+          weekday: "Wednesday",
+          details: []
+        },
+        {
+          weekday: "Thursday",
+          details: []
+        },
+        {
+          weekday: "Friday",
+          details: []
+        },
+        {
+          weekday: "Saturday",
+          details: []
+        }
+      ]
+    }
+
+    $scope.addDetails = function(e, schedule) {
+        e.preventDefault()
+        schedule.details.push({location:"Tutorial Center"})
+    }
+
     // add tutors to Firebase
     $scope.addTutor = function() {
-        GetData.$add($scope.tutor)
+        // GetData.$add($scope.tutor)
+        console.dir($scope.tutor.schedule[0])
     }
     // remove tutors from Firebase
     $scope.removeTutor = function(deleteID) {
