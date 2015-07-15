@@ -69,7 +69,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
         url: '/extending-the-class/search',
         views: {
             'home': {
-                templateUrl: 'templates/engine.html'
+                templateUrl: 'templates/engine.html',
+                controller: 'ViewController'
             }
         }
     })
