@@ -4,32 +4,32 @@ angular.module('starter.controllers', ['ngAnimate'])
     // get the tutor datastore from Firebase
     $scope.tutors = GetData
     $scope.tutor = {
-      schedule: [
-        {
-          weekday: "Monday",
-          details: []
-        },
-        {
-          weekday: "Tuesday",
-          details: []
-        },
-        {
-          weekday: "Wednesday",
-          details: []
-        },
-        {
-          weekday: "Thursday",
-          details: []
-        },
-        {
-          weekday: "Friday",
-          details: []
-        },
-        {
-          weekday: "Saturday",
-          details: []
-        }
-      ]
+        schedule: [
+            {
+                weekday: "Monday",
+                details: []
+            },
+            {
+                weekday: "Tuesday",
+                details: []
+            },
+            {
+                weekday: "Wednesday",
+                details: []
+            },
+            {
+                weekday: "Thursday",
+                details: []
+            },
+            {
+                weekday: "Friday",
+                details: []
+            },
+            {
+                weekday: "Saturday",
+                details: []
+            }
+        ]
     }
 
     $scope.addDetails = function(e, schedule) {
@@ -39,7 +39,7 @@ angular.module('starter.controllers', ['ngAnimate'])
 
     // add tutors to Firebase
     $scope.addTutor = function() {
-        // GetData.$add($scope.tutor)
+        GetData.$add($scope.tutor)
         console.dir($scope.tutor.schedule[0])
     }
     // remove tutors from Firebase

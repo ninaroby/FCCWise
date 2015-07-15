@@ -14,7 +14,7 @@
                 <p><span ng-repeat='subject in person.subjects'>{{subject}}{{$last ? '' : ', '}}</span></p>
                 <p><span ng-repeat='course in person.courses'>{{course}}{{$last ? '' : ', '}}</span></p>
                 <p ng-show='person.etc'>{{person.etc}}</p>
-                <p ng-repeat='item in person.schedule'>
+                <p ng-repeat='item in person.schedule' ng-show='item.details'>
                     {{item.weekday}}:
                     <span ng-repeat='(_, details) in item.details'>
                         {{details.times}}{{$last ? '' : ', '}}
