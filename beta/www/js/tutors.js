@@ -6,7 +6,6 @@
         "subjects": ["Computer Science"],
         "courses": ["CSCI-40", "CSCI-41", "CIT-62", "CIT-85"],
         "hiring_department": "70617373",
-        "etc": false,
         "schedule": [
             {
                 "weekday": "Monday",
@@ -62,7 +61,6 @@
         "subjects": ["Computer Information Systems", "Web Design"],
         "courses": ["CIT-62", "CIT-15"],
         "hiring_department": "70617373",
-        "etc": false,
         "schedule": [
             {
                 "weekday": "Monday",
@@ -118,7 +116,6 @@
         "subjects": ["Algebra", "Trigonometry", "Precalculus", "Calculus"],
         "courses": ["Math-103", "Math-260 (A, B, C, D)", "Math-4A", "Math-4B", "Math-5A", "Math-5B"],
         "hiring_department": "7463",
-        "etc": false,
         "schedule": [
             {
                 "weekday": "Tuesday",
@@ -174,7 +171,6 @@
         "subjects": ["Intermediate Algebra", "Pre-Algebra", "Arithmetic Review", "Precalculus", "Calculus"],
         "courses": ["Math-103", "Math-255", "Math-260 (A, B, C, D)", "Math-5A", "Math-5B"],
         "hiring_department": "7463",
-        "etc": false,
         "schedule": [
             {
                 "weekday": "Monday",
@@ -221,7 +217,6 @@
         "subjects": ["Pre-Algebra", "Elementary Algebra", "Arithmetic Review", "Trigonometry", "Precalculus"],
         "courses": ["Math-103", "Math-201", "Math-260 (A, B, C, D)", "Math-4A", "Math-4B"],
         "hiring_department": "7463",
-        "etc": false,
         "schedule": [
             {
                 "weekday": "Monday",
@@ -268,7 +263,6 @@
         "subjects": ["Pre-Algebra", "Elementary Algebra", "Arithmetic Review", "Trigonometry", "Precalculus"],
         "courses": ["Math-103", "Math-201", "Math-260 (A, B, C, D)", "Math-4A", "Math-4B"],
         "hiring_department": "7463",
-        "etc": false,
         "schedule": [
             {
                 "weekday": "Monday",

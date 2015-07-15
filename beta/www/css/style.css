@@ -350,4 +350,42 @@ iframe {
   width: 65%;
   margin-bottom: 2em; }
 
+.qwertyuiop {
+  justify-content: center;
+  -webkit-justify-content: center; }
+
+.qwertyuiop, .qwertyuiop section {
+  display: flex;
+  display: -webkit-flex; }
+  .qwertyuiop section, .qwertyuiop section section {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    width: 22%;
+    background: #ccc;
+    padding: 1%;
+    margin: 1%; }
+    .qwertyuiop section h2, .qwertyuiop section section h2 {
+      font-size: 125%;
+      text-align: center; }
+      .qwertyuiop section h2 span, .qwertyuiop section section h2 span {
+        font-size: 75%; }
+    .qwertyuiop section .search_icon, .qwertyuiop section section .search_icon {
+      height: 45px;
+      width: 45px;
+      margin: 0 auto; }
+    .qwertyuiop section a, .qwertyuiop section section a {
+      margin: 30px 0;
+      padding: 25px 70px;
+      border-radius: 4px 4px; }
+
+.tc_search_button {
+  background: #d0103a;
+  border: none;
+  color: #fff; }
+
+.etc_search_button {
+  background: rgba(153, 14, 103, 0.8);
+  border: none;
+  color: #fff; }
+
 /*# sourceMappingURL=style.css.map */

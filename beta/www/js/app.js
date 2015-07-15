@@ -40,6 +40,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
             }
         }
     })
+    .state('navigator.tcsearch', {
+        url: '/tutorial-center/search',
+        views: {
+            'home': {
+                templateUrl: 'templates/engine.html',
+                controller: 'ViewController'
+            }
+        }
+    })
     .state('navigator.wrc', {
         url: '/writing-reading-center',
         views: {
@@ -53,6 +62,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
         views: {
             'home': {
                 templateUrl: 'templates/etc.html',
+            }
+        }
+    })
+    .state('navigator.etcsearch', {
+        url: '/extending-the-class/search',
+        views: {
+            'home': {
+                templateUrl: 'templates/engine.html'
             }
         }
     })
@@ -96,15 +113,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
             }
         }
     })
-    .state('navigator.addTutor', {
-        url: '/addtutor',
-        views: {
-            'home': {
-                templateUrl: 'templates/addtutor.html',
-                controller: 'ViewController'
-            }
-        }
-    })
+    // .state('navigator.addTutor', {
+    //     url: '/addtutor',
+    //     views: {
+    //         'home': {
+    //             templateUrl: 'templates/addtutor.html',
+    //             controller: 'ViewController'
+    //         }
+    //     }
+    // })
     $urlRouterProvider.otherwise('/home')
 })
 .factory('GetData', function($firebaseArray, FIREBASE_URL) {
