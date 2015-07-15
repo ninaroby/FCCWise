@@ -5,15 +5,15 @@ angular.module('starter.controllers', ['ngAnimate'])
     $scope.tutors = GetData
     $scope.tutor = {}
     // add tutors to Firebase
-    // $scope.addTutor = function() {
-    //     GetData.$add($scope.tutor)
-    // }
+    $scope.addTutor = function() {
+        GetData.$add($scope.tutor)
+    }
     // remove tutors from Firebase
-    // $scope.removeTutor = function(deleteID) {
-    //     console.log(deleteID)
-    //     var deleteRef = new Firebase(FIREBASE_URL + deleteID)
-    //     deleteRef.remove()
-    // }
+    $scope.removeTutor = function(deleteID) {
+        console.log(deleteID)
+        var deleteRef = new Firebase(FIREBASE_URL + deleteID)
+        deleteRef.remove()
+    }
 
     // search by multiple queries
     $scope.searchFunc = function(item) {

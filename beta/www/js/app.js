@@ -114,15 +114,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
             }
         }
     })
-    // .state('navigator.addTutor', {
-    //     url: '/addtutor',
-    //     views: {
-    //         'home': {
-    //             templateUrl: 'templates/addtutor.html',
-    //             controller: 'ViewController'
-    //         }
-    //     }
-    // })
+    .state('navigator.addTutor', {
+        url: '/addtutor',
+        views: {
+            'home': {
+                templateUrl: 'templates/addtutor.html',
+                controller: 'ViewController'
+            }
+        }
+    })
     $urlRouterProvider.otherwise('/home')
 })
 .factory('GetData', function($firebaseArray, FIREBASE_URL) {
