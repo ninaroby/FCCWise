@@ -107,7 +107,6 @@
     {
         "firstName": "Katrina",
         "lastName": "Sanchez-Carlock",
-        "thumbnail": "http://fccwise.fresnocitycollege.edu/tutorialcenter/searchtutor/images/Katrtina1.jpg",
-        ""
+        "thumbnail": "http://fccwise.fresnocitycollege.edu/tutorialcenter/searchtutor/images/Katrtina1.jpg"
     }
 ]
