@@ -103,7 +103,7 @@
                 ]
             }
         ]
-    }
+    },
     {
         "firstName": "Katrina",
         "lastName": "Sanchez-Carlock",
