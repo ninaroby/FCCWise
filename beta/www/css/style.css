@@ -366,7 +366,8 @@ iframe {
     margin: 1%; }
     .qwertyuiop section h2, .qwertyuiop section section h2 {
       font-size: 125%;
-      text-align: center; }
+      text-align: center;
+      min-height: 50px; }
       .qwertyuiop section h2 span, .qwertyuiop section section h2 span {
         font-size: 75%; }
     .qwertyuiop section .search_icon, .qwertyuiop section section .search_icon {
