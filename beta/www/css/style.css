@@ -392,6 +392,8 @@ iframe {
 #staff p {
   margin-top: 0.25em;
   margin-bottom: 1em; }
+#staff h2 {
+  margin: 0.5em 0 0.5em 0.25em; }
 
 .feature_box {
   position: relative;
@@ -421,7 +423,10 @@ iframe {
   .feature_box {
     width: 80%;
     margin: auto;
-    margin-bottom: 2em; } }
+    margin-bottom: 2em; }
+
+  #staff h2 {
+    text-align: center; } }
 @media screen and (max-width: 550px) {
   .staff_contact {
     postiton: relative; }
@@ -432,9 +437,6 @@ iframe {
     text-align: center;
     margin-bottom: 2em; }
     .feature_box h3 {
-      margin-top: 1em; }
-
-  #staff h2 {
-    text-align: center; } }
+      margin-top: 1em; } }
 
 /*# sourceMappingURL=style.css.map */
