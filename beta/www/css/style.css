@@ -277,11 +277,11 @@ input {
   .inline-link:hover {
     background-color: #BABABA; }
 
-.content a {
+a.link {
   color: #D0103A;
   transition: all 500ms ease-in-out; }
 
-.content a:hover {
+a.link:hover {
   color: #000000; }
 
 table {
@@ -305,7 +305,7 @@ th, td {
 .content li {
   line-height: 1.5em;
   list-style-type: circle;
-  margin-left: 1em; }
+  margin-left: 2em; }
 
 @media (max-width: 900px) {
   #primary-content {
@@ -405,11 +405,6 @@ iframe {
   margin-bottom: 2em; }
   .feature_box h3 {
     margin: 0; }
-  .feature_box a {
-    color: #D0103A;
-    transition: all 500ms ease-in-out; }
-  .feature_box a:hover {
-    color: #000000; }
   .feature_box img {
     width: 200px;
     height: 200px; }
