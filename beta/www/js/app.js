@@ -40,6 +40,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
             }
         }
     })
+        .state('navigator.math-prep', {
+        url: '/tutorial-center/math-test-prep',
+        views: {
+            'home': {
+                templateUrl: 'templates/math-test-prep.html'
+            }
+        }
+    })
     .state('navigator.tcsearch', {
         url: '/tutorial-center/search',
         views: {

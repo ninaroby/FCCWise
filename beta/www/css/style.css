@@ -124,6 +124,9 @@ input {
       display: none; }
     .bar-footer ul {
       width: 100%; } }
+#page-content {
+  padding: 1.5em; }
+
 .area-nav ul {
   display: flex;
   display: -webkit-flex;
