@@ -36,6 +36,7 @@ angular.module('starter.controllers', ['ngAnimate'])
         ]
     }
 
+
     // If, by chance, a tutor works 2 or more shifts in a single day, we want to make an add button that
     // appends a pre-formatted object to the `details` array. This information causes a single ng-repeat
     // for each time the add button is clicked. In fact, if a tutor doesn't work one day, we don't even
@@ -52,7 +53,7 @@ angular.module('starter.controllers', ['ngAnimate'])
         // format everything exactly how I want them to be formatted. There is no room for errors.
 
         // we'll generate the thumbnail links for each tutor
-        $scope.tutor.thumbnail = 'img/tutors/' + $scope.tutor.firstName + '_' + $scope.tutor.lastName + '.jpg'
+        $scope.tutor.thumbnail = 'img/tutors/' + $scope.tutor.firstName.toLowerCase() + '_' + $scope.tutor.lastName.toLowerCase() + '.jpg'
 
         // check to see if the form is filled. If it is, take each item, split at the comma (if there is at
         // least one), and then iterate over each item to remove excess whitespace along the left and right
@@ -93,6 +94,9 @@ angular.module('starter.controllers', ['ngAnimate'])
         } else {
             $scope.tutor.etc = null
         }
+        if ($scope.tutor.schedule.instructor === '') {
+            $scope.tutor.schedule.instructor = null
+        }
 
         // remove the days that are empty
         $scope.tutor.schedule = _.filter($scope.tutor.schedule, function(schedule) {
@@ -115,12 +119,13 @@ angular.module('starter.controllers', ['ngAnimate'])
 
     // search by multiple queries
     $scope.searchFunc = function(item) {
+        var invalidSearchTerms = [' and ', ' or ', 'courses', 'firstName', 'hiring_department', 'lastName', 'schedule', 'details', 'weekday', 'location', 'times', 'short', 'subjects', 'thumbnail']
         var jsonStr = angular.lowercase(JSON.stringify(item))
         if ($scope.queryStr && $scope.queryStr.trim()) {
             var query = $scope.queryStr.trim().split(' ')
             var result = true
             for (var partIndex in query) {
-                if (jsonStr.indexOf(angular.lowercase(query[partIndex])) > -1) {
+                if (jsonStr.indexOf(angular.lowercase(query[partIndex])) > -1 && _.contains(invalidSearchTerms, query[partIndex]) !== true) {
                     result = result && true
                 } else {
                     result = false
