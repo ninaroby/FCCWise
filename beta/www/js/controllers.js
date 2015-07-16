@@ -107,7 +107,8 @@ angular.module('starter.controllers', ['ngAnimate'])
         GetData.$add($scope.tutor)
 
         // And then clear out the form for the next person
-        document.querySelector('form').reset()
+        // document.querySelector('form').reset()
+        window.location.reload(forceGet)
     }
 
     // remove tutors from Firebase
