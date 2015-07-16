@@ -434,5 +434,25 @@ iframe {
     margin-bottom: 2em; }
     .feature_box h3 {
       margin-top: 1em; } }
+i.fccwise {
+  font-size: 2em;
+  position: fixed;
+  left: 0.5em;
+  top: 0.5em;
+  color: #999999;
+  transition: all 500ms ease-in-out; }
+  i.fccwise:hover {
+    color: #d0103a; }
+
+@media screen and (max-width: 550px) {
+  i.fccwise {
+    display: block;
+    line-height: 2em;
+    font-size: 2em;
+    position: relative;
+    text-align: center;
+    padding: 0;
+    margin-left: -1em;
+    margin-top: -1em; } }
 
 /*# sourceMappingURL=style.css.map */
