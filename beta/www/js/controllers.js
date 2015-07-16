@@ -39,9 +39,33 @@ angular.module('starter.controllers', ['ngAnimate'])
 
     // add tutors to Firebase
     $scope.addTutor = function() {
-        $scope.tutor.subjects = $scope.tutor.subjects.split(', ')
-        console.log($scope.tutor.subjects)
-        // GetData.$add($scope.tutor)
+        // format everything exactly how I want them to be formatted. There is no room for errors.
+        $scope.tutor.thumbnail = 'img/tutors/' + $scope.tutor.firstName + '_' + $scope.tutor.lastName + '.jpg'
+        if ($scope.tutor.short.value !== '') {
+            $scope.tutor.short = document.querySelector('#classes').value.split(',')
+            for (var i in $scope.tutor.short) {
+                $scope.tutor.short[i] = $scope.tutor.short[i].trim()
+            }
+        }
+        if ($scope.tutor.subjects.value !== '') {
+            $scope.tutor.subjects = document.querySelector('#subjects').value.split(',')
+            for (var i in $scope.tutor.subjects) {
+                $scope.tutor.subjects[i] = $scope.tutor.subjects[i].trim()
+            }
+        }
+        if ($scope.tutor.courses.value !== '') {
+            $scope.tutor.courses = document.querySelector('#courses').value.split(',')
+            for (var i in $scope.tutor.courses) {
+                $scope.tutor.courses[i] = $scope.tutor.courses[i].trim().split(' ').join('-').toUpperCase()
+            }
+        }
+        if ($scope.tutor.etc.toUpperCase() === 'YES') {
+            $scope.tutor.etc = true
+        } else {
+            $scope.tutor.etc = false
+        }
+        GetData.$add($scope.tutor)
+        document.querySelector('form').reset()
     }
     // remove tutors from Firebase
     $scope.removeTutor = function(deleteID) {

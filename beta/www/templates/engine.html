@@ -8,7 +8,7 @@
     <ion-content class='has-subheader'>
         <ion-list>
             <ion-item class='item-divider'>Tutorial Center</ion-item>
-            <ion-item ng-repeat='person in tutors | filter: searchFunc as results' class='item-avatar item-text-wrap'>
+            <ion-item ng-repeat="person in tutors | orderBy: '-short' | filter: searchFunc as results" class='item-avatar item-text-wrap'>
                 <img ng-src="{{person.thumbnail}}" alt="">
                 <h2>{{person.firstName}} {{person.lastName}}</h2>
                 <p><span ng-repeat='subject in person.subjects'>{{subject}}{{$last ? '' : ', '}}</span></p>

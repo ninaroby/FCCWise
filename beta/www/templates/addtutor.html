@@ -15,30 +15,26 @@
                 </ion-item>
                 <ion-item>
                     <label>
-                        <input type="text" ng-model="tutor.thumbnail" placeholder='Avatar URL'>
-                    </label>
-                </ion-item>
-                <ion-item>
-                    <label>
                         <input type='text' ng-model='tutor.hiring_department' placeholder='Hiring Department Code'></input>
                     </label>
                 </ion-item>
                 <ion-item class="item-divider">Classes</ion-item>
                 <ion-item>
                     <label>
-                        <input type="text" ng-model='tutor.short' placeholder='Expertise (e.g. Accounting, Math, Statistics)'>
+                        <span class="input-label">Separate multiple classes with a comma</span>
+                        <input type="text" ng-model='tutor.short' placeholder='Classes (e.g. Accounting, Math, Statistics)' id='classes'>
                     </label>
                 </ion-item>
                 <ion-item class='item-input item-stacked-label'>
                     <label>
                         <span class='input-label'>Separate multiple subjects with a comma</span>
-                        <input type="text" ng-model="tutor.subjects[0]" placeholder='Subjects (e.g. Accounting, Math, Chemistry)'>
+                        <input type="text" ng-model="tutor.subjects" placeholder='Subjects (e.g. Accounting, Math, Chemistry)' id='subjects'>
                     </label>
                 </ion-item>
                 <ion-item class='item-input item-stacked-label'>
                     <label>
                         <span class='input-label'>Separate multiple courses with a comma</span>
-                        <input type="text" ng-model="tutor.courses[0]" placeholder='Courses (e.g. ACCTG-4A, MATH-5B, CHEM-3A)'>
+                        <input type="text" ng-model="tutor.courses" placeholder='Courses (e.g. ACCTG-4A, MATH-5B, CHEM-3A)' id='courses'>
                     </label>
                 </ion-item>
                 <ion-item>
@@ -50,10 +46,11 @@
                 <div ng-repeat="schedule in tutor.schedule">
                     <ion-item>{{schedule.weekday}}</ion-item>
                     <div ng-repeat="detail in schedule.details">
-                        <label class="item item-input item-select">
-                            <input type="text" ng-model="detail.times">
-                            <div class="input-label">Location</div>
-                            <input type='text' ng-model='details.location'>
+                        <label class="item item-input">
+                            <input type="text" ng-model="detail.times" placeholder='Hours (e.g. 8:00 AM - 4:30 PM)'>
+                        </label>
+                        <label>
+                            <input type='text' ng-model='details.location' placeholder='Location' id='location'>
                         </label>
                     </div>
                     <button class="button" ng-click="addDetails($event, schedule)">Add</button>
