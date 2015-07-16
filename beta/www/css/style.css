@@ -47,7 +47,7 @@ input {
   .bar-footer a {
     transition: all 500ms ease-in-out; }
   .bar-footer a:hover {
-    color: #D8D8D8; }
+    color: #999999; }
 
 .grid-container, .extras, .grid {
   display: flex;
@@ -125,7 +125,7 @@ input {
     .bar-footer ul {
       width: 100%; } }
 #page-content {
-  padding: 1.5em; }
+  padding: 1.5em 0 1.5em 1.5em; }
 
 .area-nav ul {
   display: flex;
@@ -182,8 +182,6 @@ input {
   margin: 1em;
   text-transform: uppercase;
   font-size: 0.8em; }
-.area-nav:last-child {
-  padding-right: 1em; }
 .area-nav a {
   color: #999999;
   transition: all 500ms ease-in-out; }
@@ -337,7 +335,6 @@ th, td {
     height: auto; }
   .area-nav li {
     width: 100%;
-    padding: 1em;
     background-color: #EAEAEA;
     text-align: center;
     margin: 0;
