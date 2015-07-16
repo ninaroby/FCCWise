@@ -36,7 +36,6 @@ angular.module('starter.controllers', ['ngAnimate'])
         ]
     }
 
-
     // If, by chance, a tutor works 2 or more shifts in a single day, we want to make an add button that
     // appends a pre-formatted object to the `details` array. This information causes a single ng-repeat
     // for each time the add button is clicked. In fact, if a tutor doesn't work one day, we don't even
@@ -107,7 +106,8 @@ angular.module('starter.controllers', ['ngAnimate'])
         GetData.$add($scope.tutor)
 
         // And then clear out the form for the next person
-        document.querySelector('form').reset()
+        // document.querySelector('form').reset()
+        window.location.reload(forceGet)
     }
 
     // remove tutors from Firebase
