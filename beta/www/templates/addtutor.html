@@ -44,16 +44,20 @@
                 </ion-item>
                 <ion-item class="item-divider">Schedule</ion-item>
                 <div ng-repeat="schedule in tutor.schedule">
-                    <ion-item>{{schedule.weekday}}</ion-item>
+                    <ion-item>
+                        {{schedule.weekday}}
+                    </ion-item>
                     <div ng-repeat="detail in schedule.details">
                         <label class="item item-input">
                             <input type="text" ng-model="detail.times" placeholder='Hours (e.g. 8:00 AM - 4:30 PM)'>
                         </label>
-                        <label>
+                        <label class='item item-input'>
                             <input type='text' ng-model='details.location' placeholder='Location' id='location'>
                         </label>
                     </div>
-                    <button class="button" ng-click="addDetails($event, schedule)">Add</button>
+                    <button class="button button-block button-clear" ng-click="addDetails($event, schedule)">
+                        <i class="icon ion-ios-plus-empty"></i>
+                    </button>
                 </div>
                 <ion-item>
                     <label>

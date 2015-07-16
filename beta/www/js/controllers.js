@@ -90,7 +90,14 @@ angular.module('starter.controllers', ['ngAnimate'])
         // That way Firebase won't index it. There is only one test case.
         if ($scope.tutor.etc.toUpperCase() === 'YES') {
             $scope.tutor.etc = true
+        } else {
+            $scope.tutor.etc = null
         }
+
+        // remove the days that are empty
+        $scope.tutor.schedule = _.filter($scope.tutor.schedule, function(schedule) {
+            return schedule.details.length !== 0
+        })
 
         // Finally, we'll push the tutor data to Firebase.
         GetData.$add($scope.tutor)
