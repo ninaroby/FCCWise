@@ -36,6 +36,7 @@ angular.module('starter.controllers', ['ngAnimate'])
         ]
     }
 
+
     // If, by chance, a tutor works 2 or more shifts in a single day, we want to make an add button that
     // appends a pre-formatted object to the `details` array. This information causes a single ng-repeat
     // for each time the add button is clicked. In fact, if a tutor doesn't work one day, we don't even

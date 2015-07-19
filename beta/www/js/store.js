@@ -12,7 +12,7 @@
         },
         {
             "title": "Vinh Le Wins Tutor of the Year",
-            "synopsis": "The tutor of the Year Award goes to the awesome Vinh Le",
+            "synopsis": "The tutor of the Year Award goes to the awesome Vinh Le.  Hear what he has to say about his love of helping students and how his time with the tutorial center will be part of his \"unforgettable memories\".",
             "id": "best_tutor"
         }
     ],
