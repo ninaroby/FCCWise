@@ -171,4 +171,18 @@ angular.module('starter.controllers', ['ngAnimate'])
         $scope.closeModal()
         document.querySelector('input').value = ''
     }
+
+    // calendar modal
+    $ionicModal.fromTemplateUrl('templates/calendarModal.html', {
+        scope: $scope
+    }).then(function(modal) {
+        $scope.modal = modal
+    })
+
+    $scope.showCalendarModal = function() {
+        $scope.modal.show()
+    }
+    $scope.closeCalendarModal = function() {
+        $scope.modal.hide()
+    }
 })

@@ -1,7 +1,15 @@
 <ion-view view-title='Workshop Calendar'>
     <ion-content class='has-header padding'>
-        <div ng-repeat='months in calendar'>
-            <h1>{{months}}</h1>
+        <div class='calendar' ng-repeat='(months, calendarMonth) in calendar'>
+            <div ng-repeat='(month, day) in calendarMonth'>
+                <h1>{{month}}</h1>
+                <div class='dayTile' ng-repeat='(info, date) in day | orderBy: "date"' ng-click='showCalendarModal()'>
+                    <p class='date'>{{date.date}}</p>
+                    <p class='calendarTitle'>{{date.title}}</p>
+                    <p>{{date.startTime}}</p>
+                    <p>{{date.location}}</p>
+                </div>
+            </div>
         </div>
     </ion-content>
 </ion-view>

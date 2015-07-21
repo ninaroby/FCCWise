@@ -1,0 +1,21 @@
+<ion-modal-view>
+    <ion-header-bar>
+        <h1 class="title">Event</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="closeCalendarModal()">Close</button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <div ng-repeat='(months, calendarMonth) in calendar'>
+            <div ng-repeat='(month, day) in calendarMonth'>
+                <h1>{{month}}</h1>
+                <div ng-repeat='(info, date) in day | orderBy: "date"' ng-click='showCalendarModal()'>
+                    <p>{{date.date}}</p>
+                    <p>{{date.title}}</p>
+                    <p>{{date.startTime}}</p>
+                    <p>{{date.location}}</p>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-modal-view>
