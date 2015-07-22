@@ -8,16 +8,13 @@
     <ion-content>
         <div ng-repeat='(months, calendarMonth) in calendar'>
             <div ng-repeat='(month, day) in calendarMonth'>
-                <div class='day-view' ng-repeat='(info, date) in day' ng-click='showCalendarModal()'>
+                <div class='day-view' ng-repeat='(info, date) in day'>
                     <h1>{{month}} {{date.date}}</h1>
                     <h3>{{date.title}}</h3>
                     <p ng-show='date.startTime'>{{date.startTime}} - {{date.endTime}}</p>
                     <p>{{date.location}}</p>
-                    <p>{{date.locationAddress}}</p>
+                    <p class='address'>{{date.locationAddress}}</p>
                     <p>{{date.description}}</p>
-                    <p>
-                        
-                    </p>
                 </div>
             </div>
         </div>
