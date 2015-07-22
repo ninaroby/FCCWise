@@ -9,7 +9,7 @@
         <div ng-repeat='(months, calendarMonth) in calendar'>
             <div ng-repeat='(month, day) in calendarMonth'>
                 <h1>{{month}}</h1>
-                <div ng-repeat='(info, date) in day | orderBy: "date"' ng-click='showCalendarModal()'>
+                <div ng-repeat='(info, date) in day' ng-click='showCalendarModal()'>
                     <p>{{date.date}}</p>
                     <p>{{date.title}}</p>
                     <p>{{date.startTime}}</p>
