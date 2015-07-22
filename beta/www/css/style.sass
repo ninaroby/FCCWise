@@ -228,6 +228,29 @@ input
 .etc-color a.current
     color: rgb(153, 14, 103)
 
+// Link for FCCWise homepage within Area Nav
+i.fccwise
+    font-size: 2em
+    position: fixed
+    left: .5em
+    top: .5em
+    color: #999999
+    transition: all 500ms ease-in-out
+    &:hover
+        color: $fcc-red
+
+@media screen and (max-width: 550px)
+    i.fccwise
+        display: block
+        line-height: 2em
+        font-size: 2em
+        position: relative
+        text-align: center
+        padding: 0
+        //margin: 0
+        margin-left: -1em
+        margin-top: -1em
+
 // Main Content Styles
 #main
     display: flex
@@ -364,9 +387,11 @@ th, td
             margin: 0
             border: 1px solid #E8A600
     .tc-color ul li
-        border: 1px solid #d0103a
+        border: 1px solid $fcc-red
+    .etc-color ul li
+        border: 1px solid $etc-purple
     .wrc-color ul li
-        border: 1px solid #e74211
+        border: 1px solid $wrc-red
 
 // video styles
 iframe
@@ -458,27 +483,7 @@ iframe
         h3
             margin-top: 1em
 
-i.fccwise
-    font-size: 2em
-    position: fixed
-    left: .5em
-    top: .5em
-    color: #999999
-    transition: all 500ms ease-in-out
-    &:hover
-        color: $fcc-red
 
-@media screen and (max-width: 550px)
-    i.fccwise
-        display: block
-        line-height: 2em
-        font-size: 2em
-        position: relative
-        text-align: center
-        padding: 0
-        //margin: 0
-        margin-left: -1em
-        margin-top: -1em
 
 
 
