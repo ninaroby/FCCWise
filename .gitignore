@@ -3,4 +3,4 @@ bin/
 .sassc
 .psd
 beta/hooks/
-node-modules/
+node_modules/
