@@ -4,10 +4,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
     $ionicPlatform.ready(function() {
         if(window.cordova && window.cordova.plugins.Keyboard) { cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true); }
         if(window.StatusBar) { StatusBar.styleDefault(); }
-    })
+    });
 })
 .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider, $sceDelegateProvider) {
-    $sceDelegateProvider.resourceUrlWhitelist(['self', 'http://youtube.com/**'])
+    $sceDelegateProvider.resourceUrlWhitelist(['self', 'http://youtube.com/**']);
     $stateProvider
     .state('navigator', {
         url: '',
@@ -130,10 +130,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
                 controller: 'ViewController'
             }
         }
-    })
-    $urlRouterProvider.otherwise('/home')
+    });
+    $urlRouterProvider.otherwise('/home');
 })
 .factory('GetData', function($firebaseArray, FIREBASE_URL) {
-    var ref = new Firebase(FIREBASE_URL)
-    return $firebaseArray(ref)
-})
+    var ref = new Firebase(FIREBASE_URL);
+    return $firebaseArray(ref);
+});
