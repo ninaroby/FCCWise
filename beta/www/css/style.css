@@ -465,4 +465,13 @@ i.fccwise {
   background: #eee;
   border: 1px solid #ccc; }
 
+.day-view {
+  padding: 15px; }
+  .day-view h1 {
+    font-weight: 100;
+    font-size: 48px;
+    color: #999; }
+  .day-view h3 {
+    font-size: 14px; }
+
 /*# sourceMappingURL=style.css.map */
