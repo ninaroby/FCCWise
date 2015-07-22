@@ -210,6 +210,26 @@ input {
 .etc-color a.current {
   color: #990e67; }
 
+i.fccwise {
+  font-size: 2em;
+  position: fixed;
+  left: 0.5em;
+  top: 0.5em;
+  color: #999999;
+  transition: all 500ms ease-in-out; }
+  i.fccwise:hover {
+    color: #d0103a; }
+
+@media screen and (max-width: 550px) {
+  i.fccwise {
+    display: block;
+    line-height: 2em;
+    font-size: 2em;
+    position: relative;
+    text-align: center;
+    padding: 0;
+    margin-left: -1em;
+    margin-top: -1em; } }
 #main {
   display: flex;
   display: -webkit-flex; }
@@ -343,8 +363,11 @@ th, td {
   .tc-color ul li {
     border: 1px solid #d0103a; }
 
+  .etc-color ul li {
+    border: 1px solid #990E67; }
+
   .wrc-color ul li {
-    border: 1px solid #e74211; } }
+    border: 1px solid #d0103a; } }
 iframe {
   height: calc(100vw / 3.8);
   width: 65%;
@@ -431,16 +454,6 @@ iframe {
     margin-bottom: 2em; }
     .feature_box h3 {
       margin-top: 1em; } }
-i.fccwise {
-  font-size: 2em;
-  position: fixed;
-  left: 0.5em;
-  top: 0.5em;
-  color: #999999;
-  transition: all 500ms ease-in-out; }
-  i.fccwise:hover {
-    color: #d0103a; }
-
 @media screen and (max-width: 550px) {
   i.fccwise {
     display: block;

@@ -3,8 +3,12 @@ Incorporate ionic for mobile friendly
 
 2/ Graphic for Math Test Prep page
 
-3/ Fix issue with area menus - padding on right?
+3/ Add media queries to resolve area links on smaller tablets
 
-4/ Add media queries to resolve area links on smaller tablets
+4/ Fix WRC colors in sass and check media queries for links
+
+5/ Re-do header image for WRC
+
+
 
  
