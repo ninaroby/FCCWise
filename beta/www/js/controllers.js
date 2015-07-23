@@ -140,7 +140,6 @@ angular.module('starter.controllers', ['ngAnimate'])
     // get the links and stuff
     $http.get('js/store.js').success(function(data) {
         $scope.news = data.news;
-        $scope.calendar = data.calendar;
     });
     $http.get('js/routes.js').success(function(data) {
         $scope.links = data;
@@ -171,17 +170,32 @@ angular.module('starter.controllers', ['ngAnimate'])
         document.querySelector('input').value = '';
     };
 
-    // calendar 
-    $ionicModal.fromTemplateUrl('templates/calendarModal.html', {
-        scope: $scope
-    }).then(function(modal) {
-        $scope.modal = modal;
-    });
-
-    $scope.showCalendarModal = function() {
-        $scope.modal.show();
+    // calendar
+    $scope.calendar = {
+        today: new Date(),
+        months: [
+            {"name": "January", "days": 31},
+            {"name": "February", "days": null},
+            {"name": "March", "days": 31},
+            {"name": "April", "days": 30},
+            {"name": "May", "days": 31},
+            {"name": "June", "days": 30},
+            {"name": "July", "days": 31},
+            {"name": "August", "days": 31},
+            {"name": "September", "days": 30},
+            {"name": "October", "days": 31},
+            {"name": "November", "days": 30},
+            {"name": "December", "days": 31}
+        ],
+        getCurrentMonth: function() {
+            return this.months[this.today.getMonth()].name;
+        },
+        tick: function tick() {
+            var today = new Date();
+            this.today = today;
+            var intervalId = setTimeout(tick, 900000);
+            console.log('Timer Updated');
+        }
     };
-    $scope.closeCalendarModal = function() {
-        $scope.modal.hide();
-    };
+    $scope.calendar.tick();
 });
