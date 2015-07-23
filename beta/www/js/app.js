@@ -311,6 +311,23 @@ angular.module('starter', ['ionic', 'firebase'])
     };
 
     // calendar
+    (function() {
+        // initialize the calendar object
+        $scope.calendar = {};
+        $scope.calendar.now = moment();
+        $scope.calendar.calendarMonths = [];
+        $scope.calendar.compileListOfMonths = function() {
+            for (var i = 0; i < 12; i ++) {
+                $scope.calendar.calendarMonths.push($scope.calendar.now.month(i).format('MMMM'));
+            }
+        };
+        if ($scope.calendar.now.isValid()) {
+            $scope.calendar.compileListOfMonths();
+        } else {
+            $scope.calendar.now = moment();
+            $scope.calendar.compileListOfMonths();
+        }
+    })();
 })
 .factory('GetData', function($firebaseArray, FIREBASE_URL) {
     var ref = new Firebase(FIREBASE_URL);
