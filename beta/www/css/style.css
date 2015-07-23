@@ -238,7 +238,8 @@ i.fccwise {
   display: flex;
   display: -webkit-flex;
   justify-content: space-around;
-  -webkit-justify-content: space-around; }
+  -webkit-justify-content: space-around;
+  padding: 1em; }
   #primary-content section {
     flex-grow: 3;
     -webkit-flex-grow: 3;

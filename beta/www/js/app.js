@@ -90,6 +90,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
             }
         }
     })
+    .state('navigator.success-pass', {
+        url: '/pass/success-pass',
+        views: {
+            'home': {
+                templateUrl: 'templates/success-pass.html',
+            }
+        }
+    })
     .state('navigator.search', {
         url: '/search',
         views: {
