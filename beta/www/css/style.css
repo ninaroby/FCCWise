@@ -497,12 +497,25 @@ iframe {
 .calendar .date {
   color: #d0103a;
   font-weight: 700;
-  font-size: 28px; }
-.calendar .dayTile {
-  padding: 10px;
-  width: 250px;
-  background: #eee;
-  border: 1px solid #ccc; }
+  font-size: 28px;
+  border-bottom: 1px solid #ccc; }
+.calendar .tile-container {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap; }
+  .calendar .tile-container .dayTile {
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    background: #eee;
+    border: 1px solid #ccc; }
+    .calendar .tile-container .dayTile .eventTile {
+      padding-top: 10px; }
+      .calendar .tile-container .dayTile .eventTile p {
+        font-size: 14px; }
+      .calendar .tile-container .dayTile .eventTile .calendarTitle {
+        font-weight: 600;
+        font-size: 14px; }
 
 .day-view {
   padding: 15px; }

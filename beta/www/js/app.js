@@ -283,6 +283,7 @@ angular.module('starter', ['ionic', 'firebase'])
     $http.get('js/store.js').success(function(data) {
         $scope.news = data.news;
         $scope.links = data.routes;
+        $scope.calendar = data.calendar;
     });
 
     // url safe linking
@@ -309,25 +310,6 @@ angular.module('starter', ['ionic', 'firebase'])
         $scope.closeModal();
         document.querySelector('input').value = '';
     };
-
-    // calendar
-    (function() {
-        // initialize the calendar object
-        $scope.calendar = {};
-        $scope.calendar.now = moment();
-        $scope.calendar.calendarMonths = [];
-        $scope.calendar.compileListOfMonths = function() {
-            for (var i = 0; i < 12; i ++) {
-                $scope.calendar.calendarMonths.push($scope.calendar.now.month(i).format('MMMM'));
-            }
-        };
-        if ($scope.calendar.now.isValid()) {
-            $scope.calendar.compileListOfMonths();
-        } else {
-            $scope.calendar.now = moment();
-            $scope.calendar.compileListOfMonths();
-        }
-    })();
 })
 .factory('GetData', function($firebaseArray, FIREBASE_URL) {
     var ref = new Firebase(FIREBASE_URL);
