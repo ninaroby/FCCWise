@@ -12,6 +12,16 @@ a {
 input {
   width: 100%; }
 
+p {
+  margin: 1em 0;
+  line-height: 1.75em;
+  text-align: justify;
+  font-size: 1.25em;
+  font-weight: 200; }
+
+.center {
+  text-align: center; }
+
 .bar-assertive, .button-assertive {
   background: #d0103a !important;
   border-color: #d0103a !important; }
@@ -149,6 +159,9 @@ input {
 .etc {
   background: url(../img/hero_etc.png) no-repeat center center; }
 
+.math {
+  background: url(../img/math_hero.png) no-repeat center center; }
+
 .hero {
   width: 100%;
   height: 250px;
@@ -251,12 +264,16 @@ i.fccwise {
     min-width: 400px;
     text-align: center;
     padding: 1em; }
-  #primary-content p {
-    margin: 1em 0;
-    line-height: 1.5em; }
   #primary-content h2 {
     font-size: 2em;
     line-height: 1.5em; }
+
+.content li {
+  list-style-type: circle;
+  margin-left: 2em;
+  line-height: 1.75em;
+  font-size: 1.25em;
+  font-weight: 200; }
 
 .btn {
   color: white;
@@ -304,6 +321,7 @@ a.link:hover {
   color: #000000; }
 
 table {
+  width: 100%;
   margin: 0 1em 1em 0;
   border: 1px solid #666666;
   padding: 0.5em; }
@@ -348,6 +366,9 @@ th, td {
 
   .hero {
     height: 200px; } }
+@media (max-width: 900px) {
+  .clear-background {
+    background-color: #ffffff; } }
 @media (max-width: 550px) {
   .area-nav ul {
     -webkit-flex-direction: column;
