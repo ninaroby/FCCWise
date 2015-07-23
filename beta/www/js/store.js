@@ -76,38 +76,16 @@
         {
             "July" : [
                 {
-                    "date": "17",
-                    "events": [
-                        {
-                            "title": "Demo Title",
-                            "rank": "FCCWise",
-                            "startTime": "8:00 AM",
-                            "endTime": "4:30 PM",
-                            "location": "Fresno City College - Tutorial Center",
-                            "locationAddress": "1101 E. University Ave., Fresno, CA 93741",
-                            "description": "Demo Description"
-                        }
-                    ]
-                },
-                {
-                    "date": "31",
+                    "date": 31,
                     "events": [
                         {
                             "title": "New FCCWise Site Unveiling",
-                            "rank": "FCCWise",
+                            "rank": "fcc",
                             "startTime": "9:00 AM",
                             "endTime": "10:00 AM",
                             "location": "Fresno City College - Tutorial Center",
                             "locationAddress": "1101 E. University Ave., Fresno, CA 93741",
                             "description": "Today, we will be unvailing the new FCCWise website, and all its glory and content. It features a powerful new way to search for tutors, as well as an intuitive calendar view to keep track of upcoming Tutorial Center, PASS, and WRC events and workshops."
-                        },
-                        {
-                            "title": "Demo Title",
-                            "rank": "FCCWise",
-                            "startTime": "8:00 AM",
-                            "endTime": "4:30 PM",
-                            "location": "1101 E. University Ave., Fresno, CA 93741",
-                            "description": "Demo Description"
                         }
                     ]
                 }
@@ -116,15 +94,144 @@
         {
             "August": [
                 {
-                    "date": "17",
+                    "date": 17,
                     "events": [
                         {
                             "title": "Instruction Begins - Fall 2015",
+                            "rank": "fcc",
                             "startTime": "",
                             "endTime": "",
                             "location": "Fresno City College",
                             "locationAddress": "1101 E. University Ave., Fresno, CA 93741",
                             "description": "Welcome back, students, faculty, and staff! Let the new semester begin!"
+                        }
+                    ]
+                },
+                {
+                    "date": 28,
+                    "events": [
+                        {
+                            "title": "Math Placement Test Workshop",
+                            "rank": "tc",
+                            "startTime": "12:00 PM",
+                            "endTime": "4:00 PM",
+                            "location": "Fresno City College - Tutorial Center (LI-134)",
+                            "locationAddress": "1101 E. University Ave., Fresno, CA 93741",
+                            "description": "This is the first workshop this summer for the free Math Placement Test."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "September": [
+                {
+                    "date": 11,
+                    "events": [
+                        {
+                            "title": "Math Placement Test Workshop",
+                            "rank": "tc",
+                            "startTime": "12:00 PM",
+                            "endTime": "4:00 PM",
+                            "location": "Fresno City College - Tutorial Center (LI-134)",
+                            "locationAddress": "1101 E. University Ave., Fresno, CA 93741",
+                            "description": "This is the second workshop for the free Math Placement Test."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "October": [
+                {
+                    "date": 3,
+                    "events": [
+                        {
+                            "title": "Math Placement Test Workshop",
+                            "rank": "tc",
+                            "startTime": "10:00 AM",
+                            "endTime": "2:00 PM",
+                            "location": "Fresno City College - Tutorial Center (LI-134)",
+                            "locationAddress": "1101 E. University Ave., Fresno, CA 93741",
+                            "description": "This is the third workshop for the free Math Placement Test."
+                        }
+                    ]
+                },
+                {
+                    "date": 9,
+                    "events": [
+                        {
+                            "title": "Math Placement Test Workshop",
+                            "rank": "tc",
+                            "startTime": "12:00 PM",
+                            "endTime": "4:00 PM",
+                            "location": "Fresno City College - Tutorial Center (LI-134)",
+                            "locationAddress": "1101 E. University Ave., Fresno, CA 93741",
+                            "description": "This is the fourth workshop for the free Math Placement Test."
+                        }
+                    ]
+                },
+                {
+                    "date": 30,
+                    "events": [
+                        {
+                            "title": "Math Placement Test Workshop",
+                            "rank": "tc",
+                            "startTime": "12:00 PM",
+                            "endTime": "4:00 PM",
+                            "location": "Fresno City College - Tutorial Center (LI-134)",
+                            "locationAddress": "1101 E. University Ave., Fresno, CA 93741",
+                            "description": "This is the fifth workshop for the free Math Placement Test."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "November": [
+                {
+                    "date": 13,
+                    "events": [
+                        {
+                            "title": "Math Placement Test Workshop",
+                            "rank": "tc",
+                            "startTime": "12:00 PM",
+                            "endTime": "4:00 PM",
+                            "location": "Fresno City College - Tutorial Center (LI-134)",
+                            "locationAddress": "1101 E. University Ave., Fresno, CA 93741",
+                            "description": "This is the sixth workshop for the free Math Placement Test."
+                        }
+                    ]
+                },
+                {
+                    "date": 21,
+                    "events": [
+                        {
+                            "title": "Math Placement Test Workshop",
+                            "rank": "tc",
+                            "startTime": "10:00 AM",
+                            "endTime": "2:00 PM",
+                            "location": "Fresno City College - Tutorial Center (LI-134)",
+                            "locationAddress": "1101 E. University Ave., Fresno, CA 93741",
+                            "description": "This is the seventh workshop for the free Math Placement Test."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "December": [
+                {
+                    "date": 11,
+                    "events": [
+                        {
+                            "title": "Math Placement Test Workshop",
+                            "rank": "tc",
+                            "startTime": "12:00 PM",
+                            "endTime": "4:00 PM",
+                            "location": "Fresno City College - Tutorial Center (LI-134)",
+                            "locationAddress": "1101 E. University Ave., Fresno, CA 93741",
+                            "description": "This is the eighth workshop for the free Math Placement Test."
                         }
                     ]
                 }
