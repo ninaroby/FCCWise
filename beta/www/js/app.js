@@ -195,7 +195,7 @@ angular.module('starter', ['ionic', 'firebase'])
     // that day
     $scope.addDetails = function(e, schedule) {
         e.preventDefault();
-        schedule.details.push({location:"Tutorial Center"});
+        schedule.details.push({location: "Tutorial Center"});
     };
 
     // adding tutors to Firebase
