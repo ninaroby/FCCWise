@@ -311,35 +311,6 @@ angular.module('starter', ['ionic', 'firebase'])
     };
 
     // calendar
-    $scope.calendar = {
-        today: new Date(),
-        months: [
-            {"name": "January", "days": 31},
-            {"name": "February", "days": null},
-            {"name": "March", "days": 31},
-            {"name": "April", "days": 30},
-            {"name": "May", "days": 31},
-            {"name": "June", "days": 30},
-            {"name": "July", "days": 31},
-            {"name": "August", "days": 31},
-            {"name": "September", "days": 30},
-            {"name": "October", "days": 31},
-            {"name": "November", "days": 30},
-            {"name": "December", "days": 31}
-        ],
-        getCurrentMonth: function() {
-            return this.months[this.today.getMonth()].name;
-        },
-        tick: function tick() {
-            var today = new Date();
-            this.today = today;
-            var intervalId = setTimeout(tick, 900000);
-            console.log('Timer Updated');
-        }
-    };
-    // use moment.js for enforcing of dates
-    // generating dates in workshop
-    $scope.calendar.tick();
 })
 .factory('GetData', function($firebaseArray, FIREBASE_URL) {
     var ref = new Firebase(FIREBASE_URL);
