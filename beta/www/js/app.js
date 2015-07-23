@@ -41,11 +41,19 @@ angular.module('starter', ['ionic', 'firebase'])
             }
         }
     })
-        .state('navigator.math-prep', {
+    .state('navigator.math-prep', {
         url: '/tutorial-center/math-test-prep',
         views: {
             'home': {
                 templateUrl: 'templates/math-test-prep.html'
+            }
+        }
+    })
+    .state('navigator.math-placement-resources', {
+        url: '/tutorial-center/math-placement-resources',
+        views: {
+            'home': {
+                templateUrl: 'templates/math-prep-resources.html'
             }
         }
     })
