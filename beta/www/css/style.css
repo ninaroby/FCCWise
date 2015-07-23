@@ -490,6 +490,16 @@ iframe {
     padding: 0;
     margin-left: -1em;
     margin-top: -1em; } }
+.calendar .fcc-rank i {
+  color: #d0103a; }
+.calendar .tc-rank i {
+  color: #6e0200; }
+.calendar .pass-ran i {
+  color: #eaaf05; }
+.calendar .wrc-rank i {
+  color: #d0103a; }
+.calendar .etc-rank i {
+  color: #990E67; }
 .calendar h1 {
   font-weight: 300;
   padding: 20px 0;
@@ -516,6 +526,9 @@ iframe {
       .calendar .tile-container .dayTile .eventTile .calendarTitle {
         font-weight: 600;
         font-size: 14px; }
+
+.calendar:last-child {
+  padding-bottom: 20px; }
 
 .day-view {
   padding: 15px; }
