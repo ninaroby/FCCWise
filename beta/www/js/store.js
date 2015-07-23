@@ -76,6 +76,20 @@
         {
             "July" : [
                 {
+                    "date": "17",
+                    "events": [
+                        {
+                            "title": "Demo Title",
+                            "rank": "FCCWise",
+                            "startTime": "8:00 AM",
+                            "endTime": "4:30 PM",
+                            "location": "Fresno City College - Tutorial Center",
+                            "locationAddress": "1101 E. University Ave., Fresno, CA 93741",
+                            "description": "Demo Description"
+                        }
+                    ]
+                },
+                {
                     "date": "31",
                     "events": [
                         {
@@ -87,19 +101,6 @@
                             "locationAddress": "1101 E. University Ave., Fresno, CA 93741",
                             "description": "Today, we will be unvailing the new FCCWise website, and all its glory and content. It features a powerful new way to search for tutors, as well as an intuitive calendar view to keep track of upcoming Tutorial Center, PASS, and WRC events and workshops."
                         },
-                        {
-                            "title": "Demo Title",
-                            "rank": "FCCWise",
-                            "startTime": "8:00 AM",
-                            "endTime": "4:30 PM",
-                            "location": "1101 E. University Ave., Fresno, CA 93741",
-                            "description": "Demo Description"
-                        }
-                    ]
-                },
-                {
-                    "date": "17",
-                    "events": [
                         {
                             "title": "Demo Title",
                             "rank": "FCCWise",

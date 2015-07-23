@@ -497,7 +497,8 @@ iframe {
 .calendar .date {
   color: #d0103a;
   font-weight: 700;
-  font-size: 28px; }
+  font-size: 28px;
+  border-bottom: 1px solid #ccc; }
 .calendar .tile-container {
   display: flex;
   display: -webkit-flex;
@@ -509,7 +510,12 @@ iframe {
     background: #eee;
     border: 1px solid #ccc; }
     .calendar .tile-container .dayTile .eventTile {
-      border-bottom: 1px solid #ccc; }
+      padding-top: 10px; }
+      .calendar .tile-container .dayTile .eventTile p {
+        font-size: 14px; }
+      .calendar .tile-container .dayTile .eventTile .calendarTitle {
+        font-weight: 600;
+        font-size: 14px; }
 
 .day-view {
   padding: 15px; }
