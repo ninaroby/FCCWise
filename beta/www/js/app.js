@@ -29,7 +29,7 @@ angular.module('starter', ['ionic', 'firebase'])
         url: '/tutorial-center',
         views: {
             'home': {
-                templateUrl: 'templates/tc.html',
+                templateUrl: 'templates/tc.html'
             }
         }
     })
@@ -62,7 +62,7 @@ angular.module('starter', ['ionic', 'firebase'])
         url: '/writing-reading-center',
         views: {
             'home': {
-                templateUrl: 'templates/wrc.html',
+                templateUrl: 'templates/wrc.html'
             }
         }
     })
@@ -70,7 +70,7 @@ angular.module('starter', ['ionic', 'firebase'])
         url: '/extending-the-class',
         views: {
             'home': {
-                templateUrl: 'templates/etc.html',
+                templateUrl: 'templates/etc.html'
             }
         }
     })
@@ -87,7 +87,7 @@ angular.module('starter', ['ionic', 'firebase'])
         url: '/pass',
         views: {
             'home': {
-                templateUrl: 'templates/pass.html',
+                templateUrl: 'templates/pass.html'
             }
         }
     })
@@ -95,7 +95,7 @@ angular.module('starter', ['ionic', 'firebase'])
         url: '/pass/success-pass',
         views: {
             'home': {
-                templateUrl: 'templates/success-pass.html',
+                templateUrl: 'templates/success-pass.html'
             }
         }
     })
@@ -103,7 +103,7 @@ angular.module('starter', ['ionic', 'firebase'])
         url: '/search',
         views: {
             'home': {
-                templateUrl: 'templates/search.html',
+                templateUrl: 'templates/search.html'
             }
         }
     })
@@ -111,7 +111,7 @@ angular.module('starter', ['ionic', 'firebase'])
         url: '/become-a-tutor',
         views: {
             'home': {
-                templateUrl: 'templates/tutor-application.html',
+                templateUrl: 'templates/tutor-application.html'
             }
         }
     })
@@ -119,7 +119,16 @@ angular.module('starter', ['ionic', 'firebase'])
         url: '/calendar',
         views: {
             'home': {
-                templateUrl: 'templates/calendar.html',
+                templateUrl: 'templates/calendar.html'
+            }
+        }
+    })
+    .state('navigator.events', {
+        url: '/calendar/:monthId/:dayId',
+        views: {
+            'home': {
+                templateUrl: 'templates/events.html',
+                controller: 'ViewController'
             }
         }
     })
@@ -127,7 +136,7 @@ angular.module('starter', ['ionic', 'firebase'])
         url: '/resources',
         views: {
             'home': {
-                templateUrl: 'templates/resources.html',
+                templateUrl: 'templates/resources.html'
             }
         }
     })
@@ -142,7 +151,7 @@ angular.module('starter', ['ionic', 'firebase'])
     });
     $urlRouterProvider.otherwise('/home');
 })
-.controller('ViewController', function($scope, $http, $ionicModal, $ionicHistory, $sce, GetData, FIREBASE_URL) {
+.controller('ViewController', function($scope, $http, $ionicModal, $state, $ionicHistory, $sce, GetData, FIREBASE_URL) {
     // get the tutor datastore from Firebase
     $scope.tutors = GetData;
 
@@ -284,6 +293,8 @@ angular.module('starter', ['ionic', 'firebase'])
         $scope.news = data.news;
         $scope.links = data.routes;
         $scope.calendar = data.calendar;
+        $scope.whichMonth = $state.params.monthId;
+        $scope.whichDay = $state.params.dayId;
     });
 
     // url safe linking

@@ -4,7 +4,7 @@
             <div ng-repeat='(month, day) in calendarMonth'>
                 <h1>{{month}}</h1>
                 <div class="tile-container">
-                    <div class='dayTile' ng-repeat='(info, date) in day | orderBy: "date"' href='/#/calendar/{{month}}/{{date.date}}'>
+                    <div class='dayTile' ng-repeat='(info, date) in day | orderBy: "date"'>
                         <p class='date'>{{date.date}}</p>
                         <div class='eventTile' ng-repeat="items in date.events">
                             <p class='calendarTitle {{items.rank}}-rank'><i class='icon ion-ios-circle-filled'></i> {{items.title}}</p>
