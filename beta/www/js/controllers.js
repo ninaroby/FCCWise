@@ -197,5 +197,7 @@ angular.module('starter.controllers', ['ngAnimate'])
             console.log('Timer Updated');
         }
     };
+    // use moment.js for enforcing of dates
+    // generating dates in workshop
     $scope.calendar.tick();
 });

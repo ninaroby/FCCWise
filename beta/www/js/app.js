@@ -8,6 +8,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
 })
 .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider, $sceDelegateProvider) {
     $sceDelegateProvider.resourceUrlWhitelist(['self', 'http://youtube.com/**']);
+    $sceDelegateProvider.resourceUrlWhitelist(['self', 'http://fccwise.fresnocitycollege.edu/**']);
     $stateProvider
     .state('navigator', {
         url: '',

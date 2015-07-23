@@ -14,7 +14,7 @@
         <div class="grid-container gray">
             <h2>News &amp; Upcoming Events</h2>
             <section class='articles'>
-                <article ng-repeat='(key, value) in news'>
+                <article ng-repeat='(key, value) in news | limitTo: 3'>
                     <h4>{{value.title}}</h4>
                     <p>{{value.synopsis | limitTo: 100}}{{value.synopsis.length > 100 ? '&hellip;': ''}}</p>
                 </article>
