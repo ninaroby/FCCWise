@@ -444,6 +444,35 @@ iframe
     width: 65%
     margin-bottom: 2em
 
+aside
+    iframe
+        width: 100%
+
+// For articles within an aside
+aside
+    p
+        font-size: 1em
+        font-style: italic
+        font-weight: 200
+    h3
+        font-weight: 500
+        font-size: 1em
+        color: $fcc-red
+
+// for articles within an aside on smaller screens
+
+@media screen and (max-width: 550px)
+    .supplemental
+        background: none
+        border-top: 2px solid #ccc
+        margin-top: 2em
+        h3
+            margin-top: 1em
+        iframe
+            height: calc(100vw / 1.8)
+            width: 100%
+            margin-bottom: 2em
+
 // search for tutor
 .qwertyuiop
     justify-content: center

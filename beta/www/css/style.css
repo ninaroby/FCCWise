@@ -419,6 +419,29 @@ iframe {
   width: 65%;
   margin-bottom: 2em; }
 
+aside iframe {
+  width: 100%; }
+
+aside p {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 200; }
+aside h3 {
+  font-weight: 500;
+  font-size: 1em;
+  color: #d0103a; }
+
+@media screen and (max-width: 550px) {
+  .supplemental {
+    background: none;
+    border-top: 2px solid #ccc;
+    margin-top: 2em; }
+    .supplemental h3 {
+      margin-top: 1em; }
+    .supplemental iframe {
+      height: calc(100vw / 1.8);
+      width: 100%;
+      margin-bottom: 2em; } }
 .qwertyuiop {
   justify-content: center;
   -webkit-justify-content: center; }
