@@ -44,6 +44,12 @@ article:last-child {
 .center {
   text-align: center; }
 
+.row {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center; }
+
 .bar-assertive, .button-assertive {
   background: #d0103a !important;
   border-color: #d0103a !important; }
