@@ -203,7 +203,7 @@ angular.module('starter', ['ionic', 'firebase'])
     // that day
     $scope.addDetails = function(e, schedule) {
         e.preventDefault();
-        schedule.details.push({location: "Tutorial Center"});
+        schedule.details.push({location: "Tutorial Center", times: ""});
     };
 
     // adding tutors to Firebase
@@ -211,14 +211,16 @@ angular.module('starter', ['ionic', 'firebase'])
         // format everything exactly how I want them to be formatted. There is no room for errors.
 
         // we'll generate the thumbnail links for each tutor
-        $scope.tutor.thumbnail = 'img/tutors/' + $scope.tutor.firstName.toLowerCase() + '_' + $scope.tutor.lastName.toLowerCase() + '.jpg';
+        if (document.querySelector('#firstName').value !== '' && document.querySelector('#lastName').value !== '') {
+            $scope.tutor.thumbnail = 'img/tutors/' + $scope.tutor.firstName.toLowerCase() + '_' + $scope.tutor.lastName.toLowerCase() + '.jpg';
+        }
 
         // check to see if the form is filled for classes. If it is, take each item, split at the comma (if
         // there is at least one), and then iterate over each item to remove excess whitespace along the
         // left and right side of the query. This cannot trim the actual text for the reason that it looks
         // at the entire string and trims the far left and far right. To get around this, simply split, and
         // then trim each item in the array.
-        if ($scope.tutor.short.value !== '') {
+        if (document.querySelector('#classes').value !== '') {
             $scope.tutor.short = document.querySelector('#classes').value.split(',');
             for (var i in $scope.tutor.short) {
                 $scope.tutor.short[i] = $scope.tutor.short[i].trim();
@@ -227,7 +229,7 @@ angular.module('starter', ['ionic', 'firebase'])
 
         // check to see if the form has been filled for subjects. If it is, split at the comma (if there is
         // one), trim the whitespace from each item in the array, and then push the array.
-        if ($scope.tutor.subjects.value !== '') {
+        if (document.querySelector('#subjects').value !== '') {
             $scope.tutor.subjects = document.querySelector('#subjects').value.split(',');
             for (var j in $scope.tutor.subjects) {
                 $scope.tutor.subjects[j] = $scope.tutor.subjects[j].trim();
@@ -236,7 +238,7 @@ angular.module('starter', ['ionic', 'firebase'])
 
         // check to see if the form has been filled for courses. If it is, split at the comma (if there is
         // one), trim the whitespace from each item in the array, and then push the array.
-        if ($scope.tutor.courses.value !== '') {
+        if (document.querySelector('#courses').value !== '') {
             $scope.tutor.courses = document.querySelector('#courses').value.split(',');
             for (var k in $scope.tutor.courses) {
                 $scope.tutor.courses[k] = $scope.tutor.courses[k].trim().split(' ').join('-').toUpperCase();
@@ -262,10 +264,12 @@ angular.module('starter', ['ionic', 'firebase'])
         });
 
         // Finally, we'll push the tutor data to Firebase.
-        GetData.$add($scope.tutor);
+        // GetData.$add($scope.tutor);
+        // console.log($scope.tutor);
+        console.log($scope.tutor.schedule[0].details[0].times);
 
         // And then clear out the form for the next person
-        document.querySelector('form').reset();
+        // document.querySelector('form').reset();
         // window.location.reload(forceGet);
     };
 
