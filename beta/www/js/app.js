@@ -131,15 +131,15 @@ angular.module('starter', ['ionic', 'firebase'])
             }
         }
     })
-    .state('navigator.events', {
-        url: '/calendar/:monthId/:dayId',
-        views: {
-            'home': {
-                templateUrl: 'templates/events.html',
-                controller: 'ViewController'
-            }
-        }
-    })
+    // .state('navigator.events', {
+    //     url: '/calendar/:monthId/:dayId',
+    //     views: {
+    //         'home': {
+    //             templateUrl: 'templates/events.html',
+    //             controller: 'ViewController'
+    //         }
+    //     }
+    // })
     .state('navigator.resources', {
         url: '/resources',
         views: {
@@ -247,7 +247,7 @@ angular.module('starter', ['ionic', 'firebase'])
         // looks at the left side of the colon for some reason. If the
         // tutor is not etc, simply don't even apply the .etc property.
         // That way Firebase won't index it. There is only one test case.
-        if ($scope.tutor.etc.toUpperCase() === 'YES') {
+        if (document.querySelector('#etc-checkbox').checked) {
             $scope.tutor.etc = true;
         } else {
             $scope.tutor.etc = null;
@@ -301,8 +301,8 @@ angular.module('starter', ['ionic', 'firebase'])
         $scope.news = data.news;
         $scope.links = data.routes;
         $scope.calendar = data.calendar;
-        $scope.whichMonth = $state.params.monthId;
-        $scope.whichDay = $state.params.dayId;
+        // $scope.whichMonth = $state.params.monthId;
+        // $scope.whichDay = $state.params.dayId;
     });
 
     // url safe linking
