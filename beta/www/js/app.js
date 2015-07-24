@@ -82,6 +82,14 @@ angular.module('starter', ['ionic', 'firebase'])
             }
         }
     })
+    .state('navigator.leaders-etc', {
+        url: '/extending-the-class/leaders',
+        views: {
+            'home': {
+                templateUrl: 'templates/leaders.html'
+            }
+        }
+    })
     .state('navigator.etcsearch', {
         url: '/extending-the-class/search',
         views: {
