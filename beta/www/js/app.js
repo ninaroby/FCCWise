@@ -265,8 +265,8 @@ angular.module('starter', ['ionic', 'firebase'])
         GetData.$add($scope.tutor);
 
         // And then clear out the form for the next person
-        // document.querySelector('form').reset()
-        window.location.reload(forceGet);
+        document.querySelector('form').reset();
+        // window.location.reload(forceGet);
     };
 
     // remove tutors from Firebase
