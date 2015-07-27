@@ -1,10 +1,17 @@
 angular.module('starter', ['ionic', 'firebase'])
 .constant('FIREBASE_URL', 'https://fccwise-search.firebaseio.com/')
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, $rootScope, $location) {
     $ionicPlatform.ready(function() {
         if(window.cordova && window.cordova.plugins.Keyboard) { cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true); }
         if(window.StatusBar) { StatusBar.styleDefault(); }
     });
+
+    // $rootScope.$on('$routeChangeError', function(event, next, previous, error) {
+    //     if (error === 'AUTH_REQUIRED') {
+    //         $rootScope.message = 'Sorry, you must be logged in to access that page.';
+    //         $location.path('/login');
+    //     }
+    // });
 })
 .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider, $sceDelegateProvider) {
     $sceDelegateProvider.resourceUrlWhitelist(['self', 'http://youtube.com/**']);
@@ -162,9 +169,24 @@ angular.module('starter', ['ionic', 'firebase'])
             'home': {
                 templateUrl: 'templates/addtutor.html',
                 controller: 'ViewController'
+                // resolve: {
+                //     currentAuth: function(Authentication) {
+                //         return Authentication.requireAuth();
+                //     }
+                // }
             }
         }
-    });
+    })
+    // .state('navigator.login', {
+    //     url: '/login',
+    //     views: {
+    //         'home': {
+    //             templateUrl: 'templates/login.html',
+    //             controller: 'LoginController'
+    //         }
+    //     }
+    // })
+    ;
     $urlRouterProvider.otherwise('/home');
 })
 .controller('ViewController', function($scope, $http, $ionicModal, $state, $ionicHistory, $sce, GetData, FIREBASE_URL) {
@@ -342,6 +364,53 @@ angular.module('starter', ['ionic', 'firebase'])
         document.querySelector('input').value = '';
     };
 })
+// .controller('LoginController', function($scope, $firebaseAuth, $location, Authentication) {
+//     var ref = new Firebase(FIREBASE_URL);
+//     var auth = $firebaseAuth(ref);
+//
+//     $scope.login = function() {
+//         Authentication.login($scope.user)
+//         .then(function(user) {
+//             $location.path('/addtutor');
+//         }).catch(function(error) {
+//             $scope.message = error.message;
+//         });
+//     };
+// })
+// .factory('Authentication', function($firebase, $firebaseAuth, $rootScope, $routeParams, $location, FIREBASE_URL) {
+//     var ref = new Firebase(FIREBASE_URL);
+//     var auth = $firebaseAuth(ref);
+//
+//     auth.$onAuth(function(authUser) {
+//         if (authUser) {
+//             var ref = new Firebase(FIREBASE_URL + '/users/' + authUser.uid);
+//             var user = $firebase(ref).$asObject();
+//             $rootScope.currentUser = user;
+//         } else {
+//             $rootScope.currentUser = '';
+//         }
+//     });
+//
+//     // temporary objects
+//     var AuthenticatedObjectByToken = {
+//         login: function(user) {
+//             return auth.$authWithPassword({
+//                 email: user.email,
+//                 password: user.password
+//             });
+//         },
+//         logout: function(user) {
+//             return auth.$unauth();
+//         },
+//         requireAuth: function() {
+//             return auth.$requireAuth();
+//         },
+//         waitForAuth: function() {
+//             return auth.$waitForAuth();
+//         }
+//     };
+//     return AuthenticatedObjectByToken;
+// })
 .factory('GetData', function($firebaseArray, FIREBASE_URL) {
     var ref = new Firebase(FIREBASE_URL);
     return $firebaseArray(ref);

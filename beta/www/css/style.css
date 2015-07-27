@@ -586,4 +586,15 @@ aside h3 {
   .day-view .address {
     color: #d0103a; }
 
+.error {
+  border: 2px solid #d0103a;
+  color: #d0103a;
+  background: #d0103a;
+  font-size: 0.8em;
+  padding-top: 5px; }
+
+.tutorapplication {
+  height: 100vh;
+  width: 100vw; }
+
 /*# sourceMappingURL=style.css.map */

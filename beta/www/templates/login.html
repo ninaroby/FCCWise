@@ -1,0 +1,21 @@
+<ion-view view-title="Login">
+    <ion-content class="has-header">
+        <form name="LoginForm" ng-submit="login()" novalidate>
+            <h1>Login</h1>
+            <p>Please login to add new tutors.</p>
+            <p class="error formerror" ng-show="message">{{message}}</p>
+
+            <ion-list>
+                <ion-item>
+                    <input class='item item-input' type="email" name="email" placeholder="Email" ng-model="user.email" ng-required="true">
+                </ion-item>
+                <ion-item>
+                    <input type="password" name="password" placeholder="Password" ng-model="user.password" ng-required="true">
+                </ion-item>
+                <ion-item>
+                    <button type="submit" class="button button-block button-assertive" ng-disabled="LoginForm.$invalid">Login</button>
+                </ion-item>
+            </ion-list>
+        </form>
+    </ion-content>
+</ion-view>
