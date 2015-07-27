@@ -233,7 +233,7 @@ angular.module('starter', ['ionic', 'firebase'])
     // that day
     $scope.addDetails = function(e, schedule) {
         e.preventDefault();
-        schedule.details.push({location: "Tutorial Center", times: ""});
+        schedule.details.push({location: "Tutorial Center"});
     };
 
     // adding tutors to Firebase
@@ -254,15 +254,6 @@ angular.module('starter', ['ionic', 'firebase'])
             $scope.tutor.short = document.querySelector('#classes').value.split(',');
             for (var i in $scope.tutor.short) {
                 $scope.tutor.short[i] = $scope.tutor.short[i].trim();
-            }
-        }
-
-        // check to see if the form has been filled for subjects. If it is, split at the comma (if there is
-        // one), trim the whitespace from each item in the array, and then push the array.
-        if (document.querySelector('#subjects').value !== '') {
-            $scope.tutor.subjects = document.querySelector('#subjects').value.split(',');
-            for (var j in $scope.tutor.subjects) {
-                $scope.tutor.subjects[j] = $scope.tutor.subjects[j].trim();
             }
         }
 
@@ -294,13 +285,12 @@ angular.module('starter', ['ionic', 'firebase'])
         });
 
         // Finally, we'll push the tutor data to Firebase.
-        // GetData.$add($scope.tutor);
+        GetData.$add($scope.tutor);
         // console.log($scope.tutor);
-        console.log($scope.tutor.schedule[0].details[0].times);
 
         // And then clear out the form for the next person
-        // document.querySelector('form').reset();
-        // window.location.reload(forceGet);
+        document.querySelector('form').reset();
+        window.location.reload(forceGet);
     };
 
     // remove tutors from Firebase

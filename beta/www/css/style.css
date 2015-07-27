@@ -597,4 +597,10 @@ aside h3 {
   height: 100vh;
   width: 100vw; }
 
+ion-scroll[direction=x] {
+  width: 100vw; }
+
+ion-scroll[direction=y] {
+  height: 100vh; }
+
 /*# sourceMappingURL=style.css.map */
