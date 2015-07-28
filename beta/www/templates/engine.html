@@ -10,7 +10,7 @@
             <ion-item class='item-divider'>Tutorial Center</ion-item>
             <ion-item ng-repeat="person in tutors | orderBy: 'person.short' | filter: searchFunc as results" class='item-avatar item-text-wrap'>
                 <img ng-src="{{person.thumbnail}}" alt="">
-                <h2>{{person.firstName}} {{person.lastName}}</h2>
+                <h2>{{person.firstName}}</h2>
                 <p><span ng-repeat='short in person.short'>{{short}}{{$last ? '' : ', '}}</span></p>
                 <p><span ng-repeat="courses in person.courses">{{courses}}{{$last ? '' : ', '}}</span></p>
                 <p ng-show='person.etc'>{{person.etc === true ? 'ETC' : ''}}</p>
@@ -18,7 +18,7 @@
                     {{item.weekday}}:
                     <span ng-repeat='(_, details) in item.details'>
                         {{details.times}}
-                        {{details.instructor}}{{!details.instructor ? '' : ', '}}
+                        {{details.instructor}}{{!details.instructor ? '' : ', '}}{{$last ? '' : ', '}}
                         {{details.location === "Tutorial Center" || details.location === '' ? '' : details.location}}{{details.subjectsTutored ? '&nbsp;&mdash;&nbsp;' : ''}}{{details.subjectsTutored}} {{$last ? '' : ', '}}
                     </span>
                 </p>
