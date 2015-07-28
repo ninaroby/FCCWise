@@ -558,6 +558,10 @@ aside h3 {
   display: flex;
   display: -webkit-flex;
   flex-wrap: wrap; }
+  @media screen and (max-width: 768px) {
+    .calendar .tile-container {
+      flex-direction: column;
+      -webkit-flex-direction: column; } }
   .calendar .tile-container .dayTile {
     margin: 10px;
     padding: 10px;
