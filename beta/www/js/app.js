@@ -288,21 +288,17 @@ angular.module('starter', ['ionic', 'firebase'])
 
         if (document.querySelector('#courses').value !== '') {
             $scope.tutor.courses = document.querySelector('#courses').value.split(',');
-            console.log($scope.tutor.courses);
             for (var k in $scope.tutor.courses) {
                 $scope.tutor.courses[k] = $scope.tutor.courses[k].trim().toUpperCase();
-                $scope.AllCourses = _.indexOf($scope.tutor.courses[k], 'AND BELOW');
-                console.log($scope.AllCourses);
-                // if ($scope.AllCourses !== -1) {
-                //     // for future reference, never declare a variable in an if statement....
-                //     var AllMathCoursesUpTo = _.indexOf($scope.mathSections, $scope.tutor.courses[k].slice(0, -10));
-                //     console.log(AllMathCoursesUpTo);
-                //     $scope.tutors.AllCoursesUpTo = [];
-                //     for (var z = 0; z < AllMathCoursesUpTo; z++) {
-                //         $scope.tutors.AllCoursesUpTo.push(AllMathCoursesUpTo[z]);
-                //     }
-                //     console.log($scope.tutors.AllCoursesUpTo);
-                // }
+                $scope.AllCourses = $scope.tutor.courses[k].search('AND BELOW');
+                if ($scope.AllCourses !== -1) {
+                    // for future reference, never declare a variable in an if statement....
+                    var AllMathCoursesUpTo = $scope.mathSections.indexOf($scope.tutor.courses[k].slice(0, -10));
+                    $scope.tutor.AllCoursesUpTo = [];
+                    for (var z = 0; z <= AllMathCoursesUpTo; z++) {
+                        $scope.tutor.AllCoursesUpTo.push($scope.mathSections[z]);
+                    }
+                }
             }
         }
 
@@ -330,7 +326,7 @@ angular.module('starter', ['ionic', 'firebase'])
 
         // And then clear out the form for the next person
         document.querySelector('form').reset();
-        window.location.reload(forceGet);
+        window.location.reload(true);
     };
 
     // remove tutors from Firebase
