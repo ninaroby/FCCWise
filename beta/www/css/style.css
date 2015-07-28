@@ -179,7 +179,7 @@ article:last-child {
   background: url(../img/hero_tc.png) no-repeat center center; }
 
 .pass {
-  background: url(../img/hero_pass.png) no-repeat center center; }
+  background: url(../img/hero_pass_home.jpg) no-repeat center center; }
 
 .wrc {
   background: url(../img/hero_wrc.png) no-repeat center center; }
@@ -198,12 +198,32 @@ article:last-child {
   flex-direction: column;
   -webkit-flex-direction: column;
   justify-content: flex-end;
-  -webkit-justify-content: flex-end;
+  -webkit-justify-content: center;
   align-items: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+
+.hero h1 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  line-height: 1em; }
+
+.hero span {
+  font-size: 0.5em; }
+
+.hero img {
+  width: 5em;
+  height: auto; }
+
+.small-hero {
+  height: 2em;
+  border-bottom: 2px solid #eaaf05; }
 
 #hero img {
   width: 200px;
@@ -302,6 +322,14 @@ i.fccwise {
   line-height: 2em;
   font-size: 1.25em;
   font-weight: 200; }
+
+#primary-content img {
+  width: 30%;
+  height: auto;
+  display: inline;
+  float: left;
+  margin-right: 2em;
+  margin-top: 0.5em; }
 
 .btn {
   color: white;
