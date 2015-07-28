@@ -258,11 +258,50 @@ angular.module('starter', ['ionic', 'firebase'])
         }
 
         // check to see if the form has been filled for courses. If it is, split at the comma (if there is
-        // one), trim the whitespace from each item in the array, and then push the array.
+        // one), trim the whitespace from each item in the array, and then push the array. We also want to
+        // check if it's a math class. If someone types in ' and below' in the field, we should automatically
+        // generate a list up to and including that course. That way we can reduce the amount of typing
+        // required to fill out the form. We'll check to see if the form is $dirty and if it contains "math",
+        // "and below", and then we will append a new property to the tutor. This will not show on the tutor
+        // search page, but will be indexable and searchable.
+        $scope.mathSections = [
+            'MATH-260 (A, B, C, D)',
+            'MATH-255',
+            'MATH-250',
+            'MATH-201',
+            'MATH-103',
+            'MATH-102',
+            'MATH-45',
+            'MATH-42',
+            'MATH-26',
+            'MATH-21',
+            'MATH-11',
+            'MATH-10A',
+            'MATH-10B',
+            'MATH-4A',
+            'MATH-4B',
+            'MATH-5A',
+            'MATH-5B',
+            'MATH-6',
+            'MATH-7'
+        ];
+
         if (document.querySelector('#courses').value !== '') {
             $scope.tutor.courses = document.querySelector('#courses').value.split(',');
+            console.log($scope.tutor.courses);
             for (var k in $scope.tutor.courses) {
-                $scope.tutor.courses[k] = $scope.tutor.courses[k].trim().split(' ').join('-').toUpperCase();
+                $scope.tutor.courses[k] = $scope.tutor.courses[k].trim().toUpperCase();
+                $scope.AllCourses = undefined;
+                console.log($scope.AllCourses);
+                if ($scope.AllCourses !== -1) {
+                    // for future reference, never declare a variable in an if statement....
+                    var AllMathCoursesUpTo = _.indexOf($scope.mathSections, $scope.tutor.courses[k].slice(0, -10));
+                    console.log(AllMathCoursesUpTo);
+                    $scope.tutors.AllCoursesUpTo = [];
+                    for (var z = 0; z < AllMathCoursesUpTo; z++) {
+                        $scope.tutors.AllCoursesUpTo.push(AllMathCoursesUpTo[z]);
+                    }
+                }
             }
         }
 
