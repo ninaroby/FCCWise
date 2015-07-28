@@ -222,8 +222,15 @@ article:last-child {
   height: auto; }
 
 .small-hero {
-  height: 2em;
-  border-bottom: 2px solid #eaaf05; }
+  border-bottom: 2px solid #eaaf05;
+  background: whitesmoke; }
+
+.small-hero h1 {
+  color: #eaaf05;
+  font-size: 2em;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 0.5em 0 0 1.5em; }
 
 #hero img {
   width: 200px;
