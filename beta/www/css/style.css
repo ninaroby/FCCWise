@@ -230,6 +230,9 @@ article:last-child {
 .wrc {
   border-bottom: 2px solid #dd3706; }
 
+.tc-red {
+  border-bottom: 2px solid #D0103A; }
+
 .small-hero h1 {
   color: #eaaf05;
   font-size: 2em;
@@ -238,6 +241,9 @@ article:last-child {
 
 .wrc h1 {
   color: #dd3706; }
+
+.tc-red h1 {
+  color: #D0103A; }
 
 #hero img {
   width: 200px;
@@ -581,7 +587,7 @@ aside h3 {
 .calendar .fcc-rank i {
   color: #d0103a; }
 .calendar .tc-rank i {
-  color: #6e0200; }
+  color: #D0103A; }
 .calendar .pass-ran i {
   color: #eaaf05; }
 .calendar .wrc-rank i {
