@@ -81,6 +81,14 @@ angular.module('starter', ['ionic', 'firebase'])
             }
         }
     })
+    .state('navigator.wrc-workshops', {
+        url: '/writing-reading-center/workshops',
+        views: {
+            'home': {
+                templateUrl: 'templates/workshops-wrc.html'
+            }
+        }
+    })
     .state('navigator.etc', {
         url: '/extending-the-class',
         views: {

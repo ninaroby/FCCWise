@@ -222,14 +222,22 @@ article:last-child {
   height: auto; }
 
 .small-hero {
-  border-bottom: 2px solid #eaaf05;
   background: whitesmoke; }
+
+.pass-yellow {
+  border-bottom: 2px solid #eaaf05; }
+
+.wrc {
+  border-bottom: 2px solid #dd3706; }
 
 .small-hero h1 {
   color: #eaaf05;
   font-size: 2em;
   font-weight: 300;
   padding: 0.5em 0 0 1.5em; }
+
+.wrc h1 {
+  color: #dd3706; }
 
 #hero img {
   width: 200px;
@@ -378,7 +386,8 @@ i.fccwise {
 
 a.link {
   color: #D0103A;
-  transition: all 500ms ease-in-out; }
+  transition: all 500ms ease-in-out;
+  line-height: 2em; }
 
 a.link:hover {
   color: #000000; }
