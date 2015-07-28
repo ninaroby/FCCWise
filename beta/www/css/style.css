@@ -15,7 +15,7 @@ input {
 p {
   margin: 0;
   line-height: 1.75em;
-  text-align: justify;
+  text-align: left;
   font-size: 1.25em;
   font-weight: 200; }
 
@@ -229,7 +229,6 @@ article:last-child {
   color: #eaaf05;
   font-size: 2em;
   font-weight: 300;
-  text-transform: uppercase;
   padding: 0.5em 0 0 1.5em; }
 
 #hero img {
