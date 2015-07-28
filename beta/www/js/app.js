@@ -291,17 +291,18 @@ angular.module('starter', ['ionic', 'firebase'])
             console.log($scope.tutor.courses);
             for (var k in $scope.tutor.courses) {
                 $scope.tutor.courses[k] = $scope.tutor.courses[k].trim().toUpperCase();
-                $scope.AllCourses = undefined;
+                $scope.AllCourses = _.indexOf($scope.tutor.courses[k], 'AND BELOW');
                 console.log($scope.AllCourses);
-                if ($scope.AllCourses !== -1) {
-                    // for future reference, never declare a variable in an if statement....
-                    var AllMathCoursesUpTo = _.indexOf($scope.mathSections, $scope.tutor.courses[k].slice(0, -10));
-                    console.log(AllMathCoursesUpTo);
-                    $scope.tutors.AllCoursesUpTo = [];
-                    for (var z = 0; z < AllMathCoursesUpTo; z++) {
-                        $scope.tutors.AllCoursesUpTo.push(AllMathCoursesUpTo[z]);
-                    }
-                }
+                // if ($scope.AllCourses !== -1) {
+                //     // for future reference, never declare a variable in an if statement....
+                //     var AllMathCoursesUpTo = _.indexOf($scope.mathSections, $scope.tutor.courses[k].slice(0, -10));
+                //     console.log(AllMathCoursesUpTo);
+                //     $scope.tutors.AllCoursesUpTo = [];
+                //     for (var z = 0; z < AllMathCoursesUpTo; z++) {
+                //         $scope.tutors.AllCoursesUpTo.push(AllMathCoursesUpTo[z]);
+                //     }
+                //     console.log($scope.tutors.AllCoursesUpTo);
+                // }
             }
         }
 
