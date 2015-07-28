@@ -233,6 +233,9 @@ article:last-child {
 .tc-red {
   border-bottom: 2px solid #D0103A; }
 
+.etc-purple {
+  border-bottom: 2px solid #990E67; }
+
 .small-hero h1 {
   color: #eaaf05;
   font-size: 2em;
@@ -244,6 +247,9 @@ article:last-child {
 
 .tc-red h1 {
   color: #D0103A; }
+
+.etc-purple h1 {
+  color: #990E67; }
 
 #hero img {
   width: 200px;
@@ -334,7 +340,8 @@ i.fccwise {
     padding: 1em; }
   #primary-content h2 {
     font-size: 2em;
-    line-height: 1.5em; }
+    line-height: 1.5em;
+    font-weight: 300; }
 
 .content li {
   list-style-type: circle;
@@ -393,7 +400,8 @@ i.fccwise {
 a.link {
   color: #D0103A;
   transition: all 500ms ease-in-out;
-  line-height: 2em; }
+  line-height: 3em;
+  font-size: 1.2em; }
 
 a.link:hover {
   color: #000000; }
