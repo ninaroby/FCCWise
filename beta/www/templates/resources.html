@@ -1,5 +1,11 @@
 <ion-view view-title='Educational Resources'>
-    <ion-content class='has-header'>
+    <div class="bar bar-subheader item-input-inset bar-light bar-custom">
+        <label class="item-input-wrapper">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="search" placeholder='Search' ng-model='query'>
+        </label>
+    </div>
+    <ion-content class='has-subheader resources'>
         <div ng-repeat="(key, category) in resources">
             <div ng-repeat="(_, subcategory) in category">
                 <div ng-repeat="(topic, item) in subcategory">
@@ -8,8 +14,8 @@
                         <div ng-repeat="(section, inventory) in value">
                             <div ng-repeat="(ref, link) in inventory">
                                 <h3>{{ref}}</h3>
-                                <div ng-repeat="(resource, grift) in link">
-                                    <a href="{{grift.url}}"><i class='icon {{grift.type}}'></i> {{grift.title}}</a>
+                                <div ng-repeat="(resource, grift) in link | filter: query">
+                                    <a href="{{grift.url}}" target="_blank" id="{{grift.id}}"><i class='icon {{grift.type}}'></i>{{grift.title}}</a>
                                 </div>
                             </div>
                         </div>

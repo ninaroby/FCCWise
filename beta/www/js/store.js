@@ -496,32 +496,217 @@
                                     "type": "ion-ios-videocam",
                                     "url": "http://www.youtube.com/watch?v=_A8lLbZCrlw",
                                     "id": "simpliifying-algebraic-expressions"
+                                },
+                                {
+                                    "title": "Absolute Value: Evaluating Numbers",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://patrickjmt.com/absolute-value-and-evaluating-numbers/",
+                                    "id": "absolute-value-evaluating-numbers"
+                                },
+                                {
+                                    "title": "Exponents with Parentheses",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=gFVK-U1cYbg",
+                                    "id": "exponents-with-parentheses"
+                                },
+                                {
+                                    "title": "Multiplying and Dividing in Scientific Notation",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=497oIjqRPco",
+                                    "id": "multiplying-and-dividing-in-scientific-notation"
+                                },
+                                {
+                                    "title": "Dividing with Exponents",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=qGyN9fFvtlg",
+                                    "id": "dividing-with-exponents"
+                                },
+                                {
+                                    "title": "Negative Exponents",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=JnpqlXN9Whw",
+                                    "id": "negative-exponents"
+                                },
+                                {
+                                    "title": "Evaluating Expressions with Two Variables",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=IQlblcRgucY",
+                                    "id": "evaluating-expressions-with-two-variables"
                                 }
                             ]
                         },
                         {
                             "Polynomials": [
-
+                                {
+                                    "title": "FOIL Method for Multiplying Binomials - Distributive Property",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=Axv7cqezipY",
+                                    "id": "foil-method-for-multiplying-binomials"
+                                },
+                                {
+                                    "title": "Subtracting Polynomials",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=5ZdxnFspyP8",
+                                    "id": "subtracting-polynomials"
+                                },
+                                {
+                                    "title": "Factoring Binomials",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=N46iudmGQvM",
+                                    "id": "factoring-binomials"
+                                },
+                                {
+                                    "title": "Factoring Quadratic Expressions",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=eF6zYNzlZKQ",
+                                    "id": "factoring-quadratic-expressions"
+                                }
                             ]
                         },
                         {
                             "Linear Equations, Inequalities, Systems": [
-
+                                {
+                                    "title": "Solving Linear Equations",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=ldYGiXSHa_Q",
+                                    "id": "solving-linear-equations"
+                                },
+                                {
+                                    "title": "Solving Linear Inequalities",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=0X-bMeIN53I",
+                                    "id": "solving-linear-inequalities"
+                                },
+                                {
+                                    "title": "Systems of Equations",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=nok99JOhcjo",
+                                    "id": "systems-of-equations"
+                                },
+                                {
+                                    "title": "Solving an Equation for a Specific Variable",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=-P-LYIq50no",
+                                    "id": "solving-an-equation-for-a-specific-variable"
+                                }
                             ]
                         },
                         {
                             "Rational Expressions and Equations": [
-
+                                {
+                                    "title": "Adding and Subtracting Ratinoal Expressions",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=FZdt73khrxA",
+                                    "id": "adding-and-subtracting-rational-expressions"
+                                },
+                                {
+                                    "title": "Simplifying Rational Expressions Introduction",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=7Uos1ED3KHI",
+                                    "id": "simplifying-rational-expressions-introduction"
+                                },
+                                {
+                                    "title": "Rational Expressions: Restricted Values Made Easy",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=MVM2bGEjZh0",
+                                    "id": "rational-expressions-restricted-values-made-easy"
+                                },
+                                {
+                                    "title": "Solving Rational Equations",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=6eqgIZyXgK8",
+                                    "id": "solving-rational-equations"
+                                }
                             ]
                         },
                         {
                             "Quadratic Equations, Inequalities, Complex Numbers": [
-
+                                {
+                                    "title": "Quadratic Equations - Factoring and Quadratic Formula",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=1Pva-Iv43Nc",
+                                    "id": "quadratic-equations-factoring-and-quadratic-formula"
+                                },
+                                {
+                                    "title": "Completing the Square - Solving Quadratic Equations",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=xGOQYTo9AKY",
+                                    "id": "completing-the-square-solving-quadratic-equations"
+                                },
+                                {
+                                    "title": "Multiplying Binomials with Square Roots",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=d-cHagMWEco",
+                                    "id": "multiplying-binomials-with-square-roots"
+                                },
+                                {
+                                    "title": "Solving Quadratic Inequalities",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=t54ccHYVhoo",
+                                    "id": "solving-quadratic-inequalities"
+                                }
+                            ]
+                        },
+                        {
+                            "Logarithm and Exponential Expressions": [
+                                {
+                                    "title": "Rational Exponents and Exponent Laws",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=NuccqpiUHrk",
+                                    "id": "rational-exponents-and-exponent-laws"
+                                },
+                                {
+                                    "title": "Introduction to Logarithms",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=mQTWzLpCcW0%20/",
+                                    "id": "iontroduction-to-logarithms"
+                                },
+                                {
+                                    "title": "Introduction to Logarithm Properties",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=PupNgv49_WY",
+                                    "id": "introduction-to-logarithm-properties"
+                                },
+                                {
+                                    "title": "Solving Logarithmic Equations",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=Kv2iHde7Xgw",
+                                    "id": "solving-logarithmic-equations"
+                                }
                             ]
                         },
                         {
                             "Radical Expressions and Equations": [
-
+                                {
+                                    "title": "Simplifying Radicals",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=6QJtWfIiyZo",
+                                    "id": "simplifying-radicals"
+                                },
+                                {
+                                    "title": "Multiplying Binomials with Radicals",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=yAH3722GrP8",
+                                    "id": "multiplying-binomials-with-radicals"
+                                },
+                                {
+                                    "title": "Adding and Subtracting Radicals",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=4WURmk31ucs",
+                                    "id": "adding-and-subtracting-radicals"
+                                },
+                                {
+                                    "title": "How to Rationalize the Denominator",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=gY5TvlHg4Vk",
+                                    "id": "how-to-rationalize-the-denominator"
+                                },
+                                {
+                                    "title": "Solving Equations Involving Square Roots",
+                                    "type": "ion-ios-videocam",
+                                    "url": "http://www.youtube.com/watch?v=V8I2_zgNRHI",
+                                    "id": "solving-equations-involving-square-roots"
+                                }
                             ]
                         }
                     ]

@@ -665,6 +665,29 @@ aside h3 {
   height: 100vh;
   width: 100vw; }
 
+.resources h1, .resources h3 {
+  font-weight: 300;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc; }
+.resources h3 {
+  border: none;
+  padding: 0;
+  margin: 0; }
+.resources div {
+  padding: 0 5px; }
+.resources a {
+  font-size: 1em;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  margin: 25px; }
+  .resources a i {
+    color: #d0103a;
+    font-size: 1.5em;
+    opacity: 0.4;
+    margin-right: 10px; }
+
 ion-scroll[direction=x] {
   width: 100vw; }
 
