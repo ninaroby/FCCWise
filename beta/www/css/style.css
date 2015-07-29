@@ -15,7 +15,7 @@ input {
 p {
   margin: 0;
   line-height: 1.75em;
-  text-align: justify;
+  text-align: left;
   font-size: 1.25em;
   font-weight: 200; }
 
@@ -222,15 +222,34 @@ article:last-child {
   height: auto; }
 
 .small-hero {
-  border-bottom: 2px solid #eaaf05;
   background: whitesmoke; }
+
+.pass-yellow {
+  border-bottom: 2px solid #eaaf05; }
+
+.wrc {
+  border-bottom: 2px solid #dd3706; }
+
+.tc-red {
+  border-bottom: 2px solid #D0103A; }
+
+.etc-purple {
+  border-bottom: 2px solid #990E67; }
 
 .small-hero h1 {
   color: #eaaf05;
   font-size: 2em;
   font-weight: 300;
-  text-transform: uppercase;
   padding: 0.5em 0 0 1.5em; }
+
+.wrc h1 {
+  color: #dd3706; }
+
+.tc-red h1 {
+  color: #D0103A; }
+
+.etc-purple h1 {
+  color: #990E67; }
 
 #hero img {
   width: 200px;
@@ -321,7 +340,13 @@ i.fccwise {
     padding: 1em; }
   #primary-content h2 {
     font-size: 2em;
-    line-height: 1.5em; }
+    line-height: 1.5em;
+    font-weight: 300; }
+  #primary-content h3 {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #1e1e1e; }
 
 .content li {
   list-style-type: circle;
@@ -379,7 +404,9 @@ i.fccwise {
 
 a.link {
   color: #D0103A;
-  transition: all 500ms ease-in-out; }
+  transition: all 500ms ease-in-out;
+  line-height: 3em;
+  font-size: 1.2em; }
 
 a.link:hover {
   color: #000000; }
@@ -573,7 +600,7 @@ aside h3 {
 .calendar .fcc-rank i {
   color: #d0103a; }
 .calendar .tc-rank i {
-  color: #6e0200; }
+  color: #D0103A; }
 .calendar .pass-ran i {
   color: #eaaf05; }
 .calendar .wrc-rank i {

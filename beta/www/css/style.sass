@@ -4,7 +4,7 @@ $lonestar: #6e0200
 $deep-red: #a80000
 $red: #cc0000
 $black: #000000
-$tc-red: #6e0200
+$tc-red: #D0103A
 $etc-purple: #990E67
 $wrc-red: #d0103a
 $pass-yellow: #eaaf05
@@ -24,7 +24,7 @@ input
 p
     margin: 0
     line-height: 1.75em
-    text-align: justify
+    text-align: left
     font-size: 1.25em
     font-weight: 200
 p + ul, ul + p
@@ -235,15 +235,32 @@ article:last-child
     height: auto
 
 .small-hero
-    border-bottom: 2px solid $pass-yellow
     background: whitesmoke
+
+.pass-yellow
+    border-bottom: 2px solid $pass-yellow
+
+.wrc
+    border-bottom: 2px solid $ws-orange
+
+.tc-red
+    border-bottom: 2px solid $tc-red
+
+.etc-purple
+    border-bottom: 2px solid $etc-purple
 
 .small-hero h1
     color: $pass-yellow
     font-size: 2em
     font-weight: 300
-    text-transform: uppercase
     padding: .5em 0 0 1.5em
+
+.wrc h1
+    color: $ws-orange
+.tc-red h1
+    color: $tc-red
+.etc-purple h1
+    color: $etc-purple
 
 #hero
     img
@@ -344,6 +361,12 @@ i.fccwise
     h2
         font-size: 2em
         line-height: 1.5em
+        font-weight: 300
+    h3
+        font-size: 1.25em
+        text-transform: uppercase
+        font-weight: 500
+        color: $fcc-black
 
 .content li
     list-style-type: circle
@@ -404,6 +427,8 @@ i.fccwise
 a.link
     color: #D0103A
     transition: all 500ms ease-in-out
+    line-height: 3em
+    font-size: 1.2em
 a.link:hover
     color: #000000
 

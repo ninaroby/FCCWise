@@ -81,11 +81,35 @@ angular.module('starter', ['ionic', 'firebase'])
             }
         }
     })
+    .state('navigator.wrc-workshops', {
+        url: '/writing-reading-center/workshops',
+        views: {
+            'home': {
+                templateUrl: 'templates/workshops-wrc.html'
+            }
+        }
+    })
     .state('navigator.etc', {
         url: '/extending-the-class',
         views: {
             'home': {
                 templateUrl: 'templates/etc.html'
+            }
+        }
+    })
+    .state('navigator.etc-faculty', {
+        url: '/extending-the-class/etc-faculty',
+        views: {
+            'home': {
+                templateUrl: 'templates/etc-faculty.html'
+            }
+        }
+    })
+    .state('navigator.starting-etc', {
+        url: '/extending-the-class/starting-etc',
+        views: {
+            'home': {
+                templateUrl: 'templates/starting-etc.html'
             }
         }
     })
