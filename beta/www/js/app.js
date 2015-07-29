@@ -384,6 +384,7 @@ angular.module('starter', ['ionic', 'firebase'])
         $scope.news = data.news;
         $scope.links = data.routes;
         $scope.calendar = data.calendar;
+        $scope.resources = data.resources;
         // $scope.whichMonth = $state.params.monthId;
         // $scope.whichDay = $state.params.dayId;
     });
