@@ -322,7 +322,6 @@ angular.module('starter', ['ionic', 'firebase'])
 
         // Finally, we'll push the tutor data to Firebase.
         GetData.$add($scope.tutor);
-        // console.log($scope.tutor);
 
         // And then clear out the form for the next person
         document.querySelector('form').reset();
