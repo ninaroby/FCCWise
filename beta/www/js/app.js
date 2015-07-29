@@ -97,6 +97,14 @@ angular.module('starter', ['ionic', 'firebase'])
             }
         }
     })
+    .state('navigator.etc-data', {
+        url: '/extending-the-class/etc-data',
+        views: {
+            'home': {
+                templateUrl: 'templates/etc-data.html'
+            }
+        }
+    })
     .state('navigator.etc-faculty', {
         url: '/extending-the-class/etc-faculty',
         views: {
