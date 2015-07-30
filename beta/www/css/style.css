@@ -182,7 +182,7 @@ article:last-child {
   height: 3em; }
 
 .tc {
-  background: url(../img/hero_tc.png) no-repeat center center; }
+  background: url(../img/hero_tc.jpg) no-repeat center center; }
 
 .pass {
   background: url(../img/hero_pass_home.jpg) no-repeat center center; }
@@ -417,11 +417,19 @@ a.link {
 a.link:hover {
   color: #000000; }
 
+#staff a {
+  line-height: 0.5em;
+  font-size: 1em; }
+
 table {
   width: 100%;
   margin: 1em 1em 1em 0;
   border: 1px solid #666666;
   padding: 0.5em; }
+
+table.hours {
+  width: auto;
+  border-collapse: collapse; }
 
 th, td {
   border: 1px solid #666666;
@@ -516,6 +524,20 @@ aside h3 {
       height: calc(100vw / 1.8);
       width: 100%;
       margin-bottom: 2em; } }
+@media screen and (max-width: 550px) {
+  #primary-content {
+    padding: 0; }
+
+  #primary-content section p a {
+    font-size: 1em;
+    line-height: 1em; }
+  #primary-content section iframe {
+    width: 90% !important;
+    height: auto !important;
+    margin: auto; }
+  #primary-content section table {
+    width: 90%;
+    margin: 1em auto; } }
 .qwertyuiop {
   justify-content: center;
   -webkit-justify-content: center; }

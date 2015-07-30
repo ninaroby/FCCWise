@@ -193,7 +193,7 @@ article:last-child
 
 // Sets the hero background images for the area sections
 .tc
-    background: url(../img/hero_tc.png) no-repeat center center
+    background: url(../img/hero_tc.jpg) no-repeat center center
 
 .pass
     background: url(../img/hero_pass_home.jpg) no-repeat center center
@@ -436,12 +436,23 @@ a.link
 a.link:hover
     color: #000000
 
+//modifies links for meet the staff pages
+#staff a
+    line-height: .5em
+    font-size: 1em
+
 // Table Styles
 table
     width: 100%
     margin: 1em 1em 1em 0
     border: 1px solid #666666
     padding: .5em
+
+// Tables displaying opening hours
+table.hours
+    width: auto
+    border-collapse: collapse
+
 
 th, td
     border: 1px solid #666666
@@ -544,6 +555,22 @@ aside
             height: calc(100vw / 1.8)
             width: 100%
             margin-bottom: 2em
+
+// text and links for smaller screen sizes
+@media screen and (max-width: 550px)
+    #primary-content
+        padding: 0
+    #primary-content section
+        p a
+            font-size: 1em
+            line-height: 1em
+        iframe
+            width: 90%    !important
+            height: auto   !important
+            margin: auto
+        table
+            width: 90%
+            margin: 1em auto
 
 // search for tutor
 .qwertyuiop
