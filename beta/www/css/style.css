@@ -37,12 +37,12 @@ h4 {
   margin-top: 8px;
   height: 35px; }
 
-article {
+article:not(.articles > article) {
   border-bottom: 1.5px solid #4D4D4D;
   margin-bottom: 2em;
   padding-bottom: 1em; }
 
-article:last-child {
+article:last-child:not(.articles > article) {
   border-bottom: none; }
 
 .title-tc {
@@ -136,7 +136,7 @@ article:last-child {
         height: 100%;
         width: 100%; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   .grid-container, .extras, .grid {
     width: 100%;
     display: flex;
@@ -160,7 +160,7 @@ article:last-child {
       .grid-container .grid a, .extras .grid a {
         flex-basis: 26%;
         -webkit-flex-basis: 26%;
-        margin: 14px; }
+        margin: 13px; }
         .grid-container .grid a img, .extras .grid a img {
           height: 100%;
           width: 100%; } }
@@ -252,7 +252,7 @@ article:last-child {
   font-weight: 300;
   padding: 0.5em 0 0 1.5em; }
 
-.wrc h1 {
+.wrc-orange h1 {
   color: #dd3706; }
 
 .tc-red h1 {
@@ -542,31 +542,31 @@ aside h3 {
   #primary-content section table {
     width: 90%;
     margin: 1em auto; } }
-.qwertyuiop {
+.application-container {
   justify-content: center;
   -webkit-justify-content: center; }
 
-.qwertyuiop, .qwertyuiop section {
+.application-container, .application-container section {
   display: flex;
   display: -webkit-flex; }
-  .qwertyuiop section, .qwertyuiop section section {
+  .application-container section, .application-container section section {
     flex-direction: column;
     -webkit-flex-direction: column;
     width: 22%;
     background: #ccc;
     padding: 1%;
     margin: 1%; }
-    .qwertyuiop section h2, .qwertyuiop section section h2 {
+    .application-container section h2, .application-container section section h2 {
       font-size: 125%;
       text-align: center;
       min-height: 50px; }
-      .qwertyuiop section h2 span, .qwertyuiop section section h2 span {
+      .application-container section h2 span, .application-container section section h2 span {
         font-size: 75%; }
-    .qwertyuiop section .search_icon, .qwertyuiop section section .search_icon {
+    .application-container section .search_icon, .application-container section section .search_icon {
       height: 45px;
       width: 45px;
       margin: 0 auto; }
-    .qwertyuiop section a, .qwertyuiop section section a {
+    .application-container section a, .application-container section section a {
       margin: 30px 0;
       padding: 25px 70px;
       border-radius: 4px 4px; }
