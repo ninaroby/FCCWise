@@ -21,7 +21,7 @@
                         {{details.location === "Tutorial Center" || details.location === '' ? '' : details.location}}{{details.subjectsTutored ? '&nbsp;&mdash;&nbsp;' : ''}}{{details.subjectsTutored}} {{$last ? '' : ', '}}
                     </span>
                 </p>
-                <p ng-show="person.notes">
+                <p id='promise'>
                     {{person.notes}}
                 </p>
             </ion-item>

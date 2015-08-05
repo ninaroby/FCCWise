@@ -730,4 +730,7 @@ ion-scroll[direction=x] {
 ion-scroll[direction=y] {
   height: 100vh; }
 
+.promise {
+  color: #d0103a; }
+
 /*# sourceMappingURL=style.css.map */
