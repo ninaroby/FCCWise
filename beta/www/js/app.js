@@ -1,3 +1,4 @@
+
 angular.module("starter", ["ionic", "firebase"])
 .constant("FIREBASE_URL", "https://fccwise-search.firebaseio.com/")
 .run(function($ionicPlatform, $rootScope, $location) {
@@ -143,6 +144,14 @@ angular.module("starter", ["ionic", "firebase"])
         views: {
             "home": {
                 templateUrl: "templates/pass.html"
+            }
+        }
+    })
+    .state("navigator.pass-online-tutoring", {
+        url: "/pass-online-tutoring",
+        views: {
+            "home": {
+                templateUrl: "templates/pass-online-tutoring.html"
             }
         }
     })
