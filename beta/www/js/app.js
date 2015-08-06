@@ -82,6 +82,14 @@ angular.module("starter", ["ionic", "firebase"])
             }
         }
     })
+    .state("navigator.wrc-online-tutoring", {
+        url: "/wrc-online-tutoring",
+        views: {
+            "home": {
+                templateUrl: "templates/wrc-online-tutoring.html"
+            }
+        }
+    })
     .state("navigator.wrc-workshops", {
         url: "/writing-reading-center/workshops",
         views: {

@@ -242,7 +242,7 @@ article:last-child:not(.articles > article) {
   border-bottom: 2px solid #eaaf05; }
 
 .wrc-orange {
-  border-bottom: 2px solid #dd3706; }
+  border-bottom: 2px solid #e74211; }
 
 .tc-red {
   border-bottom: 2px solid #D0103A; }
@@ -251,19 +251,21 @@ article:last-child:not(.articles > article) {
   border-bottom: 2px solid #990E67; }
 
 .small-hero h1 {
-  color: #eaaf05;
   font-size: 2em;
   font-weight: 300;
   padding: 0.5em 0 0 1.5em; }
 
 .wrc-orange h1 {
-  color: #dd3706; }
+  color: #e74211; }
 
 .tc-red h1 {
   color: #D0103A; }
 
 .etc-purple h1 {
   color: #990E67; }
+
+.pass-yellow h1 {
+  color: #eaaf05; }
 
 #hero img {
   width: 200px;
