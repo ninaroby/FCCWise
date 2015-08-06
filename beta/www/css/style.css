@@ -13,7 +13,7 @@ input {
   width: 100%; }
 
 p {
-  margin: 0;
+  margin: 1em 0;
   line-height: 1.75em;
   text-align: left;
   font-size: 1.25em;
@@ -52,7 +52,8 @@ article:last-child:not(.articles > article) {
   color: #990E67; }
 
 .center {
-  text-align: center; }
+  text-align: center;
+  margin: 0; }
 
 .row {
   display: flex;
