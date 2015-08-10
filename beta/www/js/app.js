@@ -163,6 +163,14 @@ angular.module("starter", ["ionic", "firebase"])
             }
         }
     })
+    .state("navigator.brain-food", {
+        url: "/brain-food",
+        views: {
+            "home": {
+                templateUrl: "templates/brain-food.html"
+            }
+        }
+    })
     .state("navigator.success-pass", {
         url: "/pass/success-pass",
         views: {
