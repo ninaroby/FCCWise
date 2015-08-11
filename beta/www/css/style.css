@@ -22,7 +22,7 @@ p {
 p + ul, ul + p {
   margin-top: 0.5em; }
 
-p > span {
+p > span:not(ion-item > p) {
   font-style: italic; }
 
 h3 {
