@@ -181,7 +181,7 @@ article:last-child:not(.articles > article) {
       .grid-container .grid a, .extras .grid a {
         flex-basis: 26%;
         -webkit-flex-basis: 26%;
-        margin: 8px; }
+        margin: 12px; }
         .grid-container .grid a img, .extras .grid a img {
           height: 100%;
           width: 100%; } }
