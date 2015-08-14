@@ -98,6 +98,14 @@ angular.module("starter", ["ionic", "firebase"])
             }
         }
     })
+    .state("navigator.wrc-resources", {
+        url: "/wrc-resources",
+        views: {
+            "home": {
+                templateUrl: "templates/wrc-resources.html"
+            }
+        }
+    })
     .state("navigator.etc", {
         url: "/extending-the-class",
         views: {
@@ -160,6 +168,14 @@ angular.module("starter", ["ionic", "firebase"])
         views: {
             "home": {
                 templateUrl: "templates/pass-online-tutoring.html"
+            }
+        }
+    })
+    .state("navigator.brain-food", {
+        url: "/brain-food",
+        views: {
+            "home": {
+                templateUrl: "templates/brain-food.html"
             }
         }
     })
