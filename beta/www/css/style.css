@@ -362,7 +362,8 @@ i.fccwise {
     font-size: 1.25em;
     text-transform: uppercase;
     font-weight: 500;
-    color: #1e1e1e; }
+    color: #1e1e1e;
+    margin: 2em 0 0 0; }
 
 .content li {
   list-style-type: circle;
@@ -708,7 +709,8 @@ a > span {
 .calendar .tile-container {
   display: flex;
   display: -webkit-flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap; }
   @media screen and (max-width: 768px) {
     .calendar .tile-container {
       flex-direction: column;
@@ -785,5 +787,17 @@ ion-scroll[direction=y] {
 
 .promise {
   color: #d0103a; }
+
+ul.res {
+  line-height: 2em; }
+
+h5 + p {
+  margin-top: 0; }
+
+h3 + p {
+  margin-top: 5px; }
+
+ul + h5 {
+  margin-top: 1.5em; }
 
 /*# sourceMappingURL=style.css.map */
