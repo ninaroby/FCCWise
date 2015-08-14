@@ -17,8 +17,8 @@
                     {{item.weekday}}{{item.weekday ? ': ' : ''}}
                     <span ng-repeat='(_, details) in item.details'>
                         {{details.times}}
-                        {{details.instructor}}{{details.instructor ? ', ' : ''}}
-                        {{details.location ? ', ' + details.location : ''}}{{details.subjectsTutored ? '&nbsp;&mdash;&nbsp;' : ''}}{{details.subjectsTutored}} {{$last ? '' : ', '}}
+                        {{details.instructor}}{{details.instructor ? '' : ', '}}{{$last ? '' : ', '}}
+                        {{details.location ? ', ' : ''}}{{details.location}}{{details.subjectsTutored ? '&nbsp;&mdash;&nbsp;' : ''}}{{details.subjectsTutored}} {{$last ? '' : ', '}}
                     </span>
                 </p>
                 <p id='promise'>
