@@ -383,7 +383,7 @@ i.fccwise {
     text-transform: uppercase;
     font-weight: 500;
     color: #1e1e1e;
-    margin: 2em 0 0 0; }
+    margin: 0 0 1em 0; }
 
 .content li {
   list-style-type: circle;
