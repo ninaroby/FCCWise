@@ -191,7 +191,8 @@ angular.module("starter", ["ionic", "firebase"])
         url: "/search",
         views: {
             "home": {
-                templateUrl: "templates/search.html"
+                templateUrl: "templates/search.html",
+                controller: "ViewController"
             }
         }
     })
