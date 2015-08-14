@@ -157,7 +157,7 @@ article:last-child:not(.articles > article) {
       .grid-container .grid a:hover div, .extras .grid a:hover div {
         top: 0; }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 480px) {
   .grid-container, .extras, .grid {
     width: 100%;
     display: flex;
