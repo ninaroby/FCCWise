@@ -128,14 +128,34 @@ article:last-child:not(.articles > article) {
   .grid-container .grid, .extras .grid {
     flex-direction: row;
     -webkit-flex-direction: row;
-    width: 45%; }
+    width: 45%;
+    position: relative; }
     .grid-container .grid a, .extras .grid a {
       flex-basis: 26%;
       -webkit-flex-basis: 26%;
-      margin: 14px; }
-      .grid-container .grid a img, .extras .grid a img {
+      margin: 14px;
+      position: relative;
+      overflow: hidden; }
+      .grid-container .grid a img, .grid-container .grid a div, .extras .grid a img, .extras .grid a div {
         height: 100%;
         width: 100%; }
+      .grid-container .grid a div, .extras .grid a div {
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -webkit-align-items: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+        color: #fff;
+        font-size: 28px;
+        line-height: 1.2em;
+        overflow: hidden;
+        position: absolute;
+        top: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        transition: all 0.2s ease-out; }
+      .grid-container .grid a:hover div, .extras .grid a:hover div {
+        top: 0; }
 
 @media screen and (max-width: 640px) {
   .grid-container, .extras, .grid {

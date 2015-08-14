@@ -2,7 +2,7 @@
     <ion-side-menu-content>
         <ion-nav-bar class='bar-assertive'>
             <ion-nav-back-button></ion-nav-back-button>
-            
+
             <ion-nav-buttons side="left">
                 <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
             </ion-nav-buttons>
@@ -21,6 +21,9 @@
                 <ion-item menu-close href='#/home'>Home</ion-item>
                 <ion-item menu-close ng-repeat='items in links' href="{{items.path}}">{{items.title}}</ion-item>
                 <ion-item menu-close ng-click='showModal()'>Have a Suggestion?</ion-item>
+                <a href="https://www.cognitoforms.com/FresnoCityCollege1/FacultyReferralForTutoringServices" target="_blank">
+                    <ion-item menu-close style="border-top: 1px solid #ccc">Faculty Referral Form</ion-item>
+                </a>
             </ion-list>
         </ion-content>
     </ion-side-menu>
@@ -38,4 +41,3 @@
         <li><a href="https://login.live.com" target='_blank'>Student Email</a></li>
     </ul>
 </ion-footer-bar>
-
