@@ -6,6 +6,25 @@
         </label>
     </div>
     <ion-content class='has-header has-subheader padding'>
+        <div ng-show="query" class='bump'>
+            <ion-list>
+                <div ng-repeat="(key, category) in resources">
+                    <div ng-repeat="(_, subcategory) in category">
+                        <div ng-repeat="(topic, item) in subcategory">
+                            <div ng-repeat="(index, value) in item">
+                                <div ng-repeat="(section, inventory) in value">
+                                    <div ng-repeat="(ref, link) in inventory">
+                                        <ion-item ng-repeat="(resource, grift) in link | filter: query">
+                                            <a href="{{grift.url}}" target="_blank" id="{{grift.id}}"><i class='icon {{grift.type}}'></i>{{grift.title}}</a>
+                                        </ion-item>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ion-list>
+        </div>
         <div class="grid-container">
             <section class='grid'>
                 <a ng-repeat='items in links' href='{{items.path}}'>
@@ -14,7 +33,7 @@
                 </a>
             </section>
         </div>
-        <div class="grid-container gray">
+        <!-- <div class="grid-container gray">
             <h2>News &amp; Upcoming Events</h2>
             <section class='articles'>
                 <article ng-repeat='(key, value) in news | limitTo: 3'>
@@ -22,7 +41,7 @@
                     <p>{{value.synopsis | limitTo: 100}}{{value.synopsis.length > 100 ? '&hellip;': ''}}</p>
                 </article>
             </section>
-        </div>
+        </div> -->
         <div class="grid-container extras">
             <section>
                 <iframe type='text/html' ng-src="{{trustSrc('https://www.youtube.com/embed/38MJCRCOzwU')}}" allowfullscreen frameborder="0"></iframe>

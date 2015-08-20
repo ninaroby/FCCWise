@@ -820,4 +820,16 @@ h3 + p {
 ul + h5 {
   margin-top: 1.5em; }
 
+.bump {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  top: -8px; }
+  .bump i {
+    color: #d0103a;
+    font-size: 1.5em;
+    opacity: 0.4;
+    margin-right: 10px; }
+
 /*# sourceMappingURL=style.css.map */
