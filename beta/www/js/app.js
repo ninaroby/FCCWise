@@ -426,9 +426,8 @@ angular.module('starter', ['ionic', 'firebase'])
                 }
             }
             return result;
-        } else {
-            return true;
         }
+        return true;
     };
 
     // get the links and stuff
